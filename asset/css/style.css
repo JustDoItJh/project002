@@ -408,12 +408,21 @@ body {
 }
 .main .sc-top10 .top10-cont {
   overflow: hidden;
+  margin-top: 10px;
   height: 300px;
   padding-right: 40px;
+  box-sizing: border-box;
 }
 .main .sc-top10 .top10-cont .webtoon-area {
   width: 100%;
+  background: #ff0;
 }
 .main .sc-top10 .top10-cont .webtoon-area .webtoon-list {
   padding: 0 15px;
+}
+.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item {
+  margin-top: 5px;
+}
+.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item:first-child {
+  margin-top: 0;
 }

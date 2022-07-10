@@ -134,13 +134,20 @@
 
         .top10-cont {
             overflow: hidden;
+            margin-top: 10px;
             height: 300px;
             padding-right: 40px;
+            box-sizing: border-box;
 
             .webtoon-area {
                 width: 100%;
+                background: #ff0;
                 .webtoon-list {
                     padding: 0 15px;
+                    .webtoon-item {
+                        margin-top: 5px;
+                        &:first-child {margin-top: 0;}
+                    }
                 }
             }
         }
