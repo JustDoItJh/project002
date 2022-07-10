@@ -1,0 +1,148 @@
+
+.main {
+    padding-top: 75px;
+    width: 100%;
+    clear: both;
+    
+    hr { border: 2px solid #eee; }
+
+    // ---------------------------- 최근 본 웹툰 Section ----------------------------
+    .sc-latest {
+        padding: 20px 0 15px;
+
+        .latest-head {
+            position: relative;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 15px;
+
+            .title {
+                float: left;
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .link-mark {
+                display: inline-block;
+                width: 30px; height: 20px;
+                background: #f00;
+                margin: 5px 0 5px 5px;
+            }
+            .link-more {
+                float: right;
+                font-size: 13px;
+                font-weight: 300;
+                color: #999;
+
+                &::after {
+                    content: ">";
+                    margin-left: 5px;
+                }
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+        .latest-cont {
+            overflow: hidden;
+            width: 100%;
+            padding: 10px 0 0 15px;
+
+            .latest-list {
+                display: flex;
+
+                .latest-item {
+                    padding-right: 5px;
+                    .link {
+                        display: block;
+                        
+                        .thumb {
+                            overflow: hidden;
+                            width: 78px; height: 55px;
+                            border-radius: 2px;
+                            border: 1px solid #eee;
+                        }
+                        .title {
+                            display: block;
+                            text-align: center;
+                            font-size: 12px;
+                            padding-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // ---------------------------- 웹툰 이미지 배너 Section ----------------------------
+    .sc-banner {
+        padding: 20px 0;
+
+        .link {
+            display: block;
+            width: 100%;
+            background: linear-gradient(#23a0fa, #8fd4ff);
+            img {
+                margin: 0 auto;
+                width: 320px; height: 150px;
+            }
+        }
+    }
+
+    // ---------------------------- 실시간랭킹 TOP10 Section ----------------------------
+    .sc-top10 {
+        padding: 20px 0;
+
+        .top10-head {
+            padding: 0 15px;
+
+            .title {
+                float: left;
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .switch-box {
+                float: right;
+                font-size: 13px;
+                font-weight: 300;
+
+                .btn-switch {
+                    padding: 0 8px ;
+                    margin-right: -10px;
+
+                    &:last-child::before {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: -1px;
+                        background: #000;
+                        width: 1px;
+                        height: 11px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+        .top10-cont {
+            overflow: hidden;
+            height: 300px;
+            padding-right: 40px;
+
+            .webtoon-area {
+                width: 100%;
+                .webtoon-list {
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,89 @@
 .header {
+    position: fixed;
+    top: 0; left: 0;
     width: 100%;
-    
+    z-index: 99;
+    font-weight: 300;
+    background: #fff;
+
     .gnb-area {
-        
-        .logo {}
+        position: relative;
+        height: 40px;
+        font-size: 19px;
+
+        h1,a {float: left;}
+        .logo {
+            margin: 13px 5px 13px 13px;
+            width: 20px; height: 20px;
+            background: #f00;
+
+        }
+        .link-webnovel::before {
+            content: "";
+            display: inline-block;
+            vertical-align: -1px;
+            margin: 0 6px;
+            width: 1px;
+            background: #000;
+            height: 15px;
+        }
+        .link-webseries::before {
+            content: "";
+            display: inline-block;
+            vertical-align: -1px;
+            margin: 0 6px;
+            width: 1px;
+            background: #000;
+            height: 15px;
+        }
+        .link-webtoon, .link-webnovel, .link-webseries {
+            padding: 8px 0 0 5px;
+        }
     }
-    
+    .link-search {
+        position: absolute;
+        top: 10px; right: 55px;
+        width: 20px; height: 20px;
+        background: #f00;
+        padding: 8px;
+    }
+    .link-my {
+        position: absolute;
+        top: 10px; right: 15px;
+        width: 20px; height: 20px;
+        background: #f00;
+        padding: 8px;
+    }
+
+    .lnb-area {
+        position: relative;
+        text-align: center;
+        clear: both;
+        margin: 8px 0 0;
+        font-size: 16px;
+        border-bottom: 1px solid #ebebeb;
+
+        .lnb-list {
+            display: flex;
+            justify-content: space-around;
+            max-width: 550px;
+            margin: 0 auto;
+
+            .text{
+                display: inline-block;
+                padding-bottom: 3px;
+                
+                &:hover {
+                    color: #00d564;
+                    border-bottom: 2px solid #00d564;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
 }

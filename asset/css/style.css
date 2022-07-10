@@ -199,5 +199,221 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 99;
+  font-weight: 300;
+  background: #fff;
+}
+.header .gnb-area {
+  position: relative;
+  height: 40px;
+  font-size: 19px;
+}
+.header .gnb-area h1, .header .gnb-area a {
+  float: left;
+}
+.header .gnb-area .logo {
+  margin: 13px 5px 13px 13px;
+  width: 20px;
+  height: 20px;
+  background: #f00;
+}
+.header .gnb-area .link-webnovel::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -1px;
+  margin: 0 6px;
+  width: 1px;
+  background: #000;
+  height: 15px;
+}
+.header .gnb-area .link-webseries::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -1px;
+  margin: 0 6px;
+  width: 1px;
+  background: #000;
+  height: 15px;
+}
+.header .gnb-area .link-webtoon, .header .gnb-area .link-webnovel, .header .gnb-area .link-webseries {
+  padding: 8px 0 0 5px;
+}
+.header .link-search {
+  position: absolute;
+  top: 10px;
+  right: 55px;
+  width: 20px;
+  height: 20px;
+  background: #f00;
+  padding: 8px;
+}
+.header .link-my {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background: #f00;
+  padding: 8px;
+}
+.header .lnb-area {
+  position: relative;
+  text-align: center;
+  clear: both;
+  margin: 8px 0 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ebebeb;
+}
+.header .lnb-area .lnb-list {
+  display: flex;
+  justify-content: space-around;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.header .lnb-area .lnb-list .text {
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.header .lnb-area .lnb-list .text:hover {
+  color: #00d564;
+  border-bottom: 2px solid #00d564;
+}
+.header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main {
+  padding-top: 75px;
+  width: 100%;
+  clear: both;
+}
+.main hr {
+  border: 2px solid #eee;
+}
+.main .sc-latest {
+  padding: 20px 0 15px;
+}
+.main .sc-latest .latest-head {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+.main .sc-latest .latest-head .title {
+  float: left;
+  font-size: 15px;
+  font-weight: 500;
+}
+.main .sc-latest .latest-head .link-mark {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background: #f00;
+  margin: 5px 0 5px 5px;
+}
+.main .sc-latest .latest-head .link-more {
+  float: right;
+  font-size: 13px;
+  font-weight: 300;
+  color: #999;
+}
+.main .sc-latest .latest-head .link-more::after {
+  content: ">";
+  margin-left: 5px;
+}
+.main .sc-latest .latest-head::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .sc-latest .latest-cont {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0 0 15px;
+}
+.main .sc-latest .latest-cont .latest-list {
+  display: flex;
+}
+.main .sc-latest .latest-cont .latest-list .latest-item {
+  padding-right: 5px;
+}
+.main .sc-latest .latest-cont .latest-list .latest-item .link {
+  display: block;
+}
+.main .sc-latest .latest-cont .latest-list .latest-item .link .thumb {
+  overflow: hidden;
+  width: 78px;
+  height: 55px;
+  border-radius: 2px;
+  border: 1px solid #eee;
+}
+.main .sc-latest .latest-cont .latest-list .latest-item .link .title {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.main .sc-banner {
+  padding: 20px 0;
+}
+.main .sc-banner .link {
+  display: block;
+  width: 100%;
+  background: linear-gradient(#23a0fa, #8fd4ff);
+}
+.main .sc-banner .link img {
+  margin: 0 auto;
+  width: 320px;
+  height: 150px;
+}
+.main .sc-top10 {
+  padding: 20px 0;
+}
+.main .sc-top10 .top10-head {
+  padding: 0 15px;
+}
+.main .sc-top10 .top10-head .title {
+  float: left;
+  font-size: 15px;
+  font-weight: 500;
+}
+.main .sc-top10 .top10-head .switch-box {
+  float: right;
+  font-size: 13px;
+  font-weight: 300;
+}
+.main .sc-top10 .top10-head .switch-box .btn-switch {
+  padding: 0 8px;
+  margin-right: -10px;
+}
+.main .sc-top10 .top10-head .switch-box .btn-switch:last-child::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -1px;
+  background: #000;
+  width: 1px;
+  height: 11px;
+  margin-right: 8px;
+}
+.main .sc-top10 .top10-head::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .sc-top10 .top10-cont {
+  overflow: hidden;
+  height: 300px;
+  padding-right: 40px;
+}
+.main .sc-top10 .top10-cont .webtoon-area {
+  width: 100%;
+}
+.main .sc-top10 .top10-cont .webtoon-area .webtoon-list {
+  padding: 0 15px;
 }
