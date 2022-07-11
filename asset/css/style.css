@@ -288,6 +288,106 @@ body {
   clear: both;
 }
 
+.footer {
+  position: relative;
+  padding: 10px 10px 60px 10px;
+  background: #eee;
+  color: #999;
+  text-align: center;
+}
+.footer-banner {
+  display: block;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.footer-banner img {
+  width: 100%;
+  max-width: 355px;
+  margin: 0 auto;
+}
+.footer .site-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+.footer .site-list .site-item {
+  position: relative;
+  line-height: 50px;
+}
+.footer .site-list .site-item a {
+  display: block;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #000;
+}
+.footer .site-list .site-item + .site-item::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 3px;
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+}
+.footer .info {
+  position: relative;
+  padding-top: 15px;
+}
+.footer .info .service-list {
+  display: inline-block;
+}
+.footer .info .service-item {
+  position: relative;
+  float: left;
+}
+.footer .info .service-item + .service-item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+}
+.footer .info .service-item a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #444;
+}
+.footer .info-hide {
+  font-weight: 300;
+}
+.footer .info-hide .btn-info {
+  position: relative;
+  font-size: 13px;
+}
+.footer .info-hide .btn-info::after {
+  content: "+";
+  padding-left: 10px;
+}
+.footer .info-hideArea {
+  display: none;
+  font-size: 12px;
+  line-height: 17px;
+  padding-top: 15px;
+}
+.footer .info-hideArea .link-info {
+  display: inline-block;
+  margin: 10px 0 8px;
+  line-height: 15px;
+  border-bottom: 1px solid #888;
+}
+.footer .info-desc {
+  padding: 5px 0 20px;
+  font-size: 12px;
+}
+
 .main {
   padding-top: 75px;
   width: 100%;
@@ -501,9 +601,6 @@ body {
   height: 130px;
   box-sizing: border-box;
 }
-.main .sc-new .new-cont .swiper-wrapper {
-  margin-right: -50px;
-}
 .main .sc-new .new-cont .swiper-slide {
   width: 400px;
   height: 100%;
@@ -558,7 +655,7 @@ body {
 .main .sc-age {
   padding: 20px 0;
 }
-.main .sc-age .title {
+.main .sc-age h2.title {
   padding-left: 15px;
   font-size: 15px;
   font-weight: 500;
@@ -567,4 +664,136 @@ body {
   position: relative;
   overflow: hidden;
   padding-left: 2px;
+}
+.main .sc-age .group-area .group-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+.main .sc-age .group-area .group-wrap .btn-switch {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  color: #999;
+}
+.main .sc-age .group-area .group-wrap .btn-switch:first-child {
+  color: #000;
+}
+.main .sc-age .age-cont {
+  margin-top: 10px;
+  height: 300px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.main .sc-age .age-cont .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #0ff;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list {
+  padding: 0 15px;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item {
+  margin-top: 5px;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item:first-child {
+  margin-top: 0;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link {
+  display: block;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb {
+  float: left;
+  width: 78px;
+  height: 55px;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb img {
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info {
+  overflow: hidden;
+  height: 55px;
+  padding-left: 15px;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .rank {
+  float: left;
+  line-height: 55px;
+  margin-right: 15px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box {
+  float: left;
+  padding: 10px 0;
+  height: 55px;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box strong.title {
+  font-size: 14px;
+  line-height: 18px;
+  max-height: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+  font-weight: 400;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box .author {
+  font-size: 12px;
+  color: #999;
+}
+.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .sc-recommend {
+  padding: 20px 0;
+}
+.main .sc-recommend h2.title {
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.main .sc-recommend .recommend {
+  overflow: hidden;
+  width: 100%;
+  padding: 12px 0 0 15px;
+  box-sizing: border-box;
+}
+.main .sc-recommend .recommend-list {
+  display: flex;
+}
+.main .sc-recommend .recommend-item {
+  padding-right: 8px;
+}
+.main .sc-recommend .recommend-item .link {
+  display: block;
+}
+.main .sc-recommend .recommend-item .link .thumb {
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+}
+.main .sc-recommend .recommend-item .link .thumb img {
+  width: auto;
+  height: 100%;
+}
+.main .sc-recommend .recommend-item .link strong.title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 120px;
+  display: block;
+  padding-top: 5px;
+}
+.main .sc-recommend .recommend-item .link .author {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 120px;
+  font-size: 12px;
+  color: #999;
 }

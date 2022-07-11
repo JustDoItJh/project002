@@ -1,0 +1,111 @@
+// Footer 
+.footer {
+    position: relative;
+    padding: 10px 10px 60px 10px;
+    background: #eee;
+    color: #999;
+    text-align: center;
+
+    &-banner {
+        display: block;
+        margin-bottom: 10px;
+        background: #fff;
+        img {
+            width: 100%;
+            max-width: 355px;
+            margin: 0 auto;
+        }
+    }
+
+    .site-list {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        background: #fff;
+
+        .site-item {
+            position: relative;
+            line-height: 50px;
+
+            a {
+                display: block;
+                padding: 0 20px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 50px;
+                color: #000;
+            }
+
+            &+.site-item::before {
+                content: "";
+                position: absolute;
+                top: 19px; left: 3px;
+                width: 1px;
+                height: 12px;
+                background: #ccc;
+            }
+        }
+    }
+
+    .info {
+        position: relative;
+        padding-top: 15px;
+
+        .service {
+
+            &-list { display: inline-block; }
+            &-item {
+                position: relative;
+                float: left;
+
+                &+.service-item::before {
+                    content: "";
+                    position: absolute;
+                    top: 12px; left: 0; 
+                    width: 1px; height: 12px;
+                    background: #ccc;
+                }
+                a {
+                    display: block;
+                    padding: 10px;
+                    font-size: 14px;
+                    line-height: 15px;
+                    color: #444;
+                }
+            }
+        }
+
+        &-hide {
+            font-weight: 300;
+            .btn-info {
+                position: relative;
+                font-size: 13px;
+                
+                &::after {
+                    content: "+";
+                    padding-left: 10px;
+                }
+            }
+        }
+        &-hideArea {
+            display: none;
+            font-size: 12px;
+            line-height: 17px;
+            padding-top: 15px;
+
+            .link-info {
+                display: inline-block;
+                margin: 10px 0 8px;
+                line-height: 15px;
+                border-bottom: 1px solid #888;
+
+            }
+        }
+
+        &-desc {
+            padding: 5px 0 20px;
+            font-size: 12px;
+        }
+    }
+}

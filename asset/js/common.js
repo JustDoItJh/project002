@@ -28,24 +28,6 @@ $(function(){
         lastScroll = currScroll
 
     })
-
-    
-
-
-    // More Button
-    
-    $('.btn-more').click(function(){
-        $('#hide-text').slideToggle();
-
-        if($(this).hasClass('active')){
-            $(this).removeClass('active')
-            $('.btn-more span').html('<em>Re</em>ad more about us');
-        } else {
-            $(this).addClass('active')
-            $('.btn-more span').html('Less');
-        }
-        
-    });
     
 
 

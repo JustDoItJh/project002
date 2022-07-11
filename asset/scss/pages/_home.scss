@@ -235,9 +235,7 @@
             padding: 0 80px 0 15px;
             height: 130px;
             box-sizing: border-box;
-            .swiper-wrapper {
-                margin-right: -50px;
-            }
+            
             .swiper-slide {
                 width: 400px;
                 height: 100%;
@@ -283,7 +281,7 @@
     // ---------------------------- 연령별, 성별 실시간 랭킹 Section ----------------------------
     .sc-age {
         padding: 20px 0;
-        .title {
+        h2.title {
             padding-left: 15px;
             font-size: 15px;
             font-weight: 500;
@@ -293,19 +291,139 @@
             overflow: hidden;
             padding-left: 2px;
             .group-wrap {
+                display: flex;
+                justify-content: space-around;
+                padding: 5px 0;
+
+                .btn-switch {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 15px;
+                    color: #999;
+
+                    &:first-child {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .age-cont {
+            margin-top: 10px;
+            height: 300px;
+            padding-right: 40px;
+            box-sizing: border-box;
+
+            .swiper-wrapper {
+                width: 100%; height: 100%;
+                background: #0ff;
                 
+                .webtoon-list {
+                    padding: 0 15px;
+                    .webtoon-item {
+                        margin-top: 5px;
+                        &:first-child {margin-top: 0;}
+
+                        .link {
+                            display: block;
+                            .thumb {
+                                float: left;
+                                width: 78px; height: 55px;
+                                img {
+                                    height: 100%;
+                                    width: auto;
+                                    margin: auto;
+                                }
+                                
+                            }
+                            .info {
+                                overflow: hidden;
+                                height: 55px;
+                                padding-left: 15px;
+                                .rank {
+                                    float: left;
+                                    line-height: 55px;
+                                    margin-right: 15px;
+                                    width: 30px;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    
+                                }
+                                .text-box {
+                                    float: left;
+                                    padding: 10px 0;
+                                    height: 55px;
+                                    
+
+                                    strong.title {
+                                        @include multi-ellipsis(14px, 18px, 1);
+                                        font-weight: 400;
+                                        
+                                    }
+                                    .author {
+                                        font-size: 12px;
+                                        color: #999;
+                                    }
+                                    
+                                }
+                            }
+                            &::after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
-    // ---------------------------- 웹툰 배너 이미지 Section ----------------------------
-
 
     // ---------------------------- Common Section ----------------------------
+    .sc-recommend {
+        padding: 20px 0;
 
+        h2.title {
+            padding: 0 15px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .recommend {
+            overflow: hidden;
+            width: 100%;
+            padding: 12px 0 0 15px;
+            box-sizing: border-box;
+            &-list {
+                display: flex;
+            }
+            &-item {
+                padding-right: 8px;
 
-    // ---------------------------- 웹툰 배너 이미지 Section ----------------------------
-
- 
-    // ---------------------------- Common Section ----------------------------
+                .link {
+                    display: block;
+                    .thumb {
+                        overflow: hidden;
+                        width: 130px; height: 130px;
+                        img {
+                            width: auto; height: 100%;
+                            
+                        }
+                    }
+                    strong.title {
+                        @include ellipsis;
+                        width: 120px;
+                        display: block;
+                        padding-top: 5px;
+                    }
+                    .author {
+                        @include ellipsis;
+                        width: 120px;
+                        font-size: 12px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
 }

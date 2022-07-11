@@ -17,22 +17,20 @@ $(function(){
     },
   });
 
-    var swiper = new Swiper(".sc-collection .swiper", {
-        slidesPerView:'auto',
-        spaceBetween: 0,
-        pagination: {
-            el: ".slide-num .italic",
-            type: "custom",
-            renderCustom: function(swiper, current, total){
-              return `${current}/${total}`
-            }
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-    });
-
   
+  // More Button
+    
+  $('.btn-info').click(function(){
+      $('.info-hideArea').slideToggle();
+
+      if($(this).hasClass('active')){
+          $(this).removeClass('active')
+          $('.btn-info::after').html('+');
+      } else {
+          $(this).addClass('active')
+          $('.btn-info::after').html('-');
+      }
+      
+  });
 
 })
