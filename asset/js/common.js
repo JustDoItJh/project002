@@ -14,15 +14,15 @@ $(function(){
 
         
         if(currScroll > 0) {
-            $('.header .inner').addClass('active')
+            $('.header .gnb-area').addClass('active')
         } else {
-            $('.header .inner').removeClass('active')
+            $('.header .gnb-area').removeClass('active')
         }
 
         if(currScroll > lastScroll) {
-            $('.header .inner').addClass('hide')
+            $('.header .gnb-area').addClass('hide')
         } else {
-            $('.header .inner').removeClass('hide')
+            $('.header .gnb-area').removeClass('hide')
         }
 
         lastScroll = currScroll
