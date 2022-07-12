@@ -206,6 +206,13 @@ body {
   z-index: 99;
   font-weight: 300;
   background: #fff;
+  transition-duration: 0.5s;
+}
+.header.hide {
+  transform: translateY(-50%);
+}
+.header.active {
+  background: #fff;
 }
 .header .gnb-area {
   position: relative;
@@ -471,106 +478,110 @@ body {
   width: 100%;
   clear: both;
 }
-.main hr.first-hr {
+
+hr.first-hr {
   border: 2px solid #eee;
 }
-.main .sc-latest {
+
+.sc-latest {
   padding: 20px 0 15px;
 }
-.main .sc-latest .latest-head {
+.sc-latest .latest-head {
   position: relative;
   height: 30px;
   line-height: 30px;
   padding: 0 15px;
 }
-.main .sc-latest .latest-head .title {
+.sc-latest .latest-head .title {
   float: left;
   font-size: 15px;
   font-weight: 500;
 }
-.main .sc-latest .latest-head .link-mark {
+.sc-latest .latest-head .link-mark {
   display: inline-block;
   width: 30px;
   height: 20px;
   background: #f00;
   margin: 5px 0 5px 5px;
 }
-.main .sc-latest .latest-head .link-more {
+.sc-latest .latest-head .link-more {
   float: right;
   font-size: 13px;
   font-weight: 300;
   color: #999;
 }
-.main .sc-latest .latest-head .link-more::after {
+.sc-latest .latest-head .link-more::after {
   content: ">";
   margin-left: 5px;
 }
-.main .sc-latest .latest-head::after {
+.sc-latest .latest-head::after {
   content: "";
   display: block;
   clear: both;
 }
-.main .sc-latest .latest-cont {
+.sc-latest .latest {
   overflow: hidden;
   width: 100%;
   padding: 10px 0 0 15px;
 }
-.main .sc-latest .latest-cont .latest-list {
+.sc-latest .latest-list {
   display: flex;
 }
-.main .sc-latest .latest-cont .latest-list .latest-item {
+.sc-latest .latest-item {
   padding-right: 5px;
 }
-.main .sc-latest .latest-cont .latest-list .latest-item .link {
+.sc-latest .latest-item .link {
   display: block;
 }
-.main .sc-latest .latest-cont .latest-list .latest-item .link .thumb {
+.sc-latest .latest-item .link .thumb {
   overflow: hidden;
   width: 78px;
   height: 55px;
   border-radius: 2px;
   border: 1px solid #eee;
 }
-.main .sc-latest .latest-cont .latest-list .latest-item .link .title {
+.sc-latest .latest-item .link .title {
   display: block;
   text-align: center;
   font-size: 12px;
   padding-top: 5px;
 }
-.main .sc-banner {
+
+.sc-banner {
   padding: 20px 0;
 }
-.main .sc-banner .link {
+.sc-banner .link {
   display: block;
   width: 100%;
   background: linear-gradient(#23a0fa, #8fd4ff);
 }
-.main .sc-banner .link img {
+.sc-banner .link img {
   margin: 0 auto;
   width: 320px;
   height: 150px;
 }
-.main .sc-top10 {
+
+.sc-top10 {
   padding: 20px 0;
 }
-.main .sc-top10 .top10-head {
+.sc-top10 .top10-head {
   padding: 0 15px;
 }
-.main .sc-top10 .top10-head .title {
+.sc-top10 .top10-head .title {
   float: left;
   font-size: 15px;
   font-weight: 500;
 }
-.main .sc-top10 .top10-head .switch-box {
+.sc-top10 .top10-head .switch-box {
   float: right;
   font-size: 13px;
   font-weight: 300;
 }
-.main .sc-top10 .top10-head .switch-box .btn-switch {
+.sc-top10 .top10-head .switch-box .btn-switch {
   padding: 0 8px;
   margin-right: -10px;
 }
-.main .sc-top10 .top10-head .switch-box .btn-switch:last-child::before {
+.sc-top10 .top10-head .switch-box .btn-switch:last-child::before {
   content: "";
   display: inline-block;
   vertical-align: -1px;
@@ -579,50 +590,50 @@ body {
   height: 11px;
   margin-right: 8px;
 }
-.main .sc-top10 .top10-head::after {
+.sc-top10 .top10-head::after {
   content: "";
   display: block;
   clear: both;
 }
-.main .sc-top10 .top10-cont {
+.sc-top10 .top10 {
   overflow: hidden;
   margin-top: 10px;
   height: 300px;
   padding-right: 40px;
   box-sizing: border-box;
 }
-.main .sc-top10 .top10-cont .webtoon-area {
+.sc-top10 .top10-area {
   width: 100%;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list {
+.sc-top10 .top10-list {
   padding: 0 15px;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item {
+.sc-top10 .top10-item {
   margin-top: 5px;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item:first-child {
+.sc-top10 .top10-item:first-child {
   margin-top: 0;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link {
+.sc-top10 .top10-item .link {
   display: block;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link .thumb {
+.sc-top10 .top10-item .link .thumb {
   overflow: hidden;
   float: left;
   width: 78px;
   height: 55px;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link .thumb img {
+.sc-top10 .top10-item .link .thumb img {
   height: 100%;
   width: auto;
   margin: auto;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link .info {
+.sc-top10 .top10-item .link .info {
   overflow: hidden;
   height: 55px;
   padding-left: 15px;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link .info .rank {
+.sc-top10 .top10-item .link .info .rank {
   float: left;
   line-height: 55px;
   margin-right: 15px;
@@ -630,37 +641,39 @@ body {
   font-size: 20px;
   text-align: center;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link .info .text-box {
+.sc-top10 .top10-item .link .info .text-box {
   float: left;
   height: 55px;
   padding: 7px 0;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link .info .text-box .title {
+.sc-top10 .top10-item .link .info .text-box .title {
   font-size: 14px;
 }
-.main .sc-top10 .top10-cont .webtoon-area .webtoon-list .webtoon-item .link .info .text-box .text-sub {
+.sc-top10 .top10-item .link .info .text-box .text-sub {
   font-size: 12px;
   color: #999;
 }
-.main hr.second-hr {
+
+hr.second-hr {
   border: 5px solid #eee;
   margin: 20px 0;
 }
-.main .sc-new {
+
+.sc-new {
   position: relative;
   padding: 20px 0;
 }
-.main .sc-new .new-head {
+.sc-new .new-head {
   position: relative;
   overflow: hidden;
   padding: 0 15px;
 }
-.main .sc-new .new-head .title {
+.sc-new .new-head .title {
   float: left;
   font-size: 15px;
   font-weight: 500;
 }
-.main .sc-new .new-head .num-box {
+.sc-new .new-head .num-box {
   position: absolute;
   top: 2px;
   right: 15px;
@@ -668,10 +681,10 @@ body {
   font-weight: 600;
   color: #999;
 }
-.main .sc-new .new-head .num-box .curr-page {
+.sc-new .new-head .num-box .curr-page {
   color: #000;
 }
-.main .sc-new .new-cont {
+.sc-new .new-cont {
   overflow: hidden;
   width: 100%;
   margin-top: 10px;
@@ -679,23 +692,23 @@ body {
   height: 130px;
   box-sizing: border-box;
 }
-.main .sc-new .new-cont .swiper-slide {
+.sc-new .new-cont .swiper-slide {
   width: 400px;
   height: 100%;
   background: rgb(250, 237, 161);
 }
-.main .sc-new .new-cont .swiper-slide .link {
+.sc-new .new-cont .swiper-slide .link {
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main .sc-new .new-cont .swiper-slide .link .info {
+.sc-new .new-cont .swiper-slide .link .info {
   display: block;
   width: 120px;
 }
-.main .sc-new .new-cont .swiper-slide .link .info .title {
+.sc-new .new-cont .swiper-slide .link .info .title {
   font-size: 16px;
   line-height: 20px;
   max-height: 40px;
@@ -704,7 +717,7 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; /* autoprefixer: off */
 }
-.main .sc-new .new-cont .swiper-slide .link .info .author {
+.sc-new .new-cont .swiper-slide .link .info .author {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -713,7 +726,7 @@ body {
   margin: 2px 0 5px;
   opacity: 0.5;
 }
-.main .sc-new .new-cont .swiper-slide .link .info .desc {
+.sc-new .new-cont .swiper-slide .link .info .desc {
   font-size: 13px;
   line-height: 15px;
   max-height: 30px;
@@ -723,79 +736,79 @@ body {
   -webkit-box-orient: vertical; /* autoprefixer: off */
   color: #444;
 }
-.main .sc-new .new-cont .swiper-slide .link .thumb {
+.sc-new .new-cont .swiper-slide .link .thumb {
   width: 163px;
   height: 130px;
 }
-.main .sc-new .new-cont .swiper-slide:nth-child(3) {
+.sc-new .new-cont .swiper-slide:nth-child(3) {
   background: rgb(236, 165, 147);
 }
-.main .sc-age {
+
+.sc-age {
   padding: 20px 0;
 }
-.main .sc-age h2.title {
+.sc-age h2.title {
   padding-left: 15px;
   font-size: 15px;
   font-weight: 500;
 }
-.main .sc-age .group-area {
+.sc-age .group-area {
   position: relative;
   overflow: hidden;
   padding-left: 2px;
 }
-.main .sc-age .group-area .group-wrap {
+.sc-age .group-area .group-wrap {
   display: flex;
   justify-content: space-around;
   padding: 5px 0;
 }
-.main .sc-age .group-area .group-wrap .btn-switch {
+.sc-age .group-area .group-wrap .btn-switch {
   font-size: 14px;
   font-weight: 600;
   line-height: 15px;
   color: #999;
 }
-.main .sc-age .group-area .group-wrap .btn-switch:first-child {
+.sc-age .group-area .group-wrap .btn-switch:first-child {
   color: #000;
 }
-.main .sc-age .age-cont {
+.sc-age .age-cont {
   margin-top: 10px;
   height: 300px;
   padding-right: 40px;
   box-sizing: border-box;
 }
-.main .sc-age .age-cont .swiper-wrapper {
+.sc-age .age-cont .swiper-wrapper {
   width: 100%;
   height: 100%;
-  background: #0ff;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list {
+.sc-age .age-cont .swiper-wrapper .webtoon-list {
   padding: 0 15px;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item {
   margin-top: 5px;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item:first-child {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item:first-child {
   margin-top: 0;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link {
   display: block;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb {
   float: left;
   width: 78px;
   height: 55px;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb img {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb img {
   height: 100%;
   width: auto;
   margin: auto;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info {
   overflow: hidden;
   height: 55px;
   padding-left: 15px;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .rank {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .rank {
   float: left;
   line-height: 55px;
   margin-right: 15px;
@@ -803,12 +816,12 @@ body {
   font-size: 20px;
   text-align: center;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box {
   float: left;
   padding: 10px 0;
   height: 55px;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box strong.title {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box strong.title {
   font-size: 14px;
   line-height: 18px;
   max-height: 18px;
@@ -818,48 +831,49 @@ body {
   -webkit-box-orient: vertical; /* autoprefixer: off */
   font-weight: 400;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box .author {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box .author {
   font-size: 12px;
   color: #999;
 }
-.main .sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link::after {
+.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link::after {
   content: "";
   display: block;
   clear: both;
 }
-.main .sc-recommend {
+
+.sc-recommend {
   padding: 20px 0;
 }
-.main .sc-recommend h2.title {
+.sc-recommend h2.title {
   padding: 0 15px;
   font-size: 15px;
   font-weight: 500;
 }
-.main .sc-recommend .recommend {
+.sc-recommend .recommend {
   overflow: hidden;
   width: 100%;
   padding: 12px 0 0 15px;
   box-sizing: border-box;
 }
-.main .sc-recommend .recommend-list {
+.sc-recommend .recommend-list {
   display: flex;
 }
-.main .sc-recommend .recommend-item {
+.sc-recommend .recommend-item {
   padding-right: 8px;
 }
-.main .sc-recommend .recommend-item .link {
+.sc-recommend .recommend-item .link {
   display: block;
 }
-.main .sc-recommend .recommend-item .link .thumb {
+.sc-recommend .recommend-item .link .thumb {
   overflow: hidden;
   width: 130px;
   height: 130px;
 }
-.main .sc-recommend .recommend-item .link .thumb img {
+.sc-recommend .recommend-item .link .thumb img {
   width: auto;
   height: 100%;
 }
-.main .sc-recommend .recommend-item .link strong.title {
+.sc-recommend .recommend-item .link strong.title {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -867,7 +881,7 @@ body {
   display: block;
   padding-top: 5px;
 }
-.main .sc-recommend .recommend-item .link .author {
+.sc-recommend .recommend-item .link .author {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
