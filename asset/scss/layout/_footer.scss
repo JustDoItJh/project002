@@ -1,7 +1,7 @@
 // Footer 
 .footer {
     position: relative;
-    padding: 10px 10px 60px 10px;
+    padding: 10px 10px 40px 10px;
     background: #eee;
     color: #999;
     text-align: center;
@@ -102,10 +102,89 @@
 
             }
         }
-
         &-desc {
             padding: 5px 0 20px;
             font-size: 12px;
         }
+
+        &-corpArea.top{
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            margin: 0 -10px;            
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                max-width: 355px;
+                
+                li {
+                    &+li::before {
+                        content: "";
+                        display: inline-block;
+                        width: 1px; height: 10px;
+                        margin: 0 8px;
+                        background: #ccc;
+                    }
+                    a {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                    .privacy {font-weight: 500;}
+                }
+                li:nth-child(4)::before {
+                    display: none;
+                }
+            }
+            .link-addr {
+                font-size: 10px;
+                font-weight: 100;
+            }
+        }
+
+        &-corpArea.bottom {
+            padding-top: 20px;
+            
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                max-width: 250px;
+                
+                li {
+                    &+li::before {
+                        content: "";
+                        display: inline-block;
+                        width: 1px; height: 10px;
+                        margin: 0 8px;
+                        background: #ccc;
+                    }
+                    a {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                    .privacy {font-weight: 500;}
+                }
+                li:nth-child(4)::before {
+                    display: none;
+                }
+            }
+            .link-addr {
+                font-size: 10px;
+                font-weight: 100;
+            }
+        }
+    }
+
+    .btn-top {
+        position: absolute;
+        top: 10px; right: 0;
+        width: 35px; height: 35px;
+        background: #fff;
+        font-size: 12px;
+        color: #000;
     }
 }

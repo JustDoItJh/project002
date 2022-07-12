@@ -290,7 +290,7 @@ body {
 
 .footer {
   position: relative;
-  padding: 10px 10px 60px 10px;
+  padding: 10px 10px 40px 10px;
   background: #eee;
   color: #999;
   text-align: center;
@@ -386,6 +386,84 @@ body {
 .footer .info-desc {
   padding: 5px 0 20px;
   font-size: 12px;
+}
+.footer .info-corpArea.top {
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  margin: 0 -10px;
+}
+.footer .info-corpArea.top ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 355px;
+}
+.footer .info-corpArea.top ul li + li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 8px;
+  background: #ccc;
+}
+.footer .info-corpArea.top ul li a {
+  font-size: 12px;
+  font-weight: 300;
+}
+.footer .info-corpArea.top ul li .privacy {
+  font-weight: 500;
+}
+.footer .info-corpArea.top ul li:nth-child(4)::before {
+  display: none;
+}
+.footer .info-corpArea.top .link-addr {
+  font-size: 10px;
+  font-weight: 100;
+}
+.footer .info-corpArea.bottom {
+  padding-top: 20px;
+}
+.footer .info-corpArea.bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 250px;
+}
+.footer .info-corpArea.bottom ul li + li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 8px;
+  background: #ccc;
+}
+.footer .info-corpArea.bottom ul li a {
+  font-size: 12px;
+  font-weight: 300;
+}
+.footer .info-corpArea.bottom ul li .privacy {
+  font-weight: 500;
+}
+.footer .info-corpArea.bottom ul li:nth-child(4)::before {
+  display: none;
+}
+.footer .info-corpArea.bottom .link-addr {
+  font-size: 10px;
+  font-weight: 100;
+}
+.footer .btn-top {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  font-size: 12px;
+  color: #000;
 }
 
 .main {
