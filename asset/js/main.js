@@ -74,7 +74,7 @@ $(function(){
 
 
   // 이달의 신작 Swiper
-  var swiper = new Swiper(".sc-new .new-cont", {
+  var swiper = new Swiper(".sc-new .swiper", {
     slidesPerView: 1, // 슬라이드에 보여지는 개수
     spaceBetween: 10, // 슬라이드 사이 간격
     loop: true,
@@ -85,10 +85,7 @@ $(function(){
         return `${current} / ${total}`
       }
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+
   });
 
 
@@ -107,21 +104,17 @@ $(function(){
 
 
     // 실시간 랭킹 top10 Swipepr
-    var swiper = new Swiper(".sc-top10 .top10", {
-      slidesPerView: 1, // 슬라이드에 보여지는 개수
-      spaceBetween: 10, // 슬라이드 사이 간격
+    const topSlide = new Swiper(".sc-top10 .swiper", {
+      slidesPerView: 1.1, // 슬라이드에 보여지는 개수
+      spaceBetween: 16, // 슬라이드 사이 간격
       loop: true,
-      pagination: {
-        el: ".btn-switch",
-        type: "custom",
-        
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
     });
 
+    $('.sc-top10 .btn-sort').click(function(){
+      idx2 = $(this).index();
+      $(this).addClass('active').siblings().removeClass('active');
+      topSlide.slideToLoop(idx2)
+    })
   
   // More Button
     
