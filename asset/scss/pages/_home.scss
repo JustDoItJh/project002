@@ -2,28 +2,26 @@
 // ---------------------------- 최근 본 웹툰 Section ----------------------------
 .sc-latest {
     padding: 20px 0 15px;
-
-
     .latest {
-        
         padding: 10px 0 0 15px;
-
-        
     }
 
 }
 
 // ---------------------------- 웹툰 이미지 배너 Section ----------------------------
-.sc-banner {
+.ad-box {
+    display: block;
+    width: 100%;
     padding: 20px 0;
-
-    .link {
+    height: 150px;
+    .link-ad {
+        position: relative;
         display: block;
-        width: 100%;
+        width: 100%; height: 150px;
         background: linear-gradient(#23a0fa, #8fd4ff);
         img {
-            margin: 0 auto;
             width: 320px; height: 150px;
+            margin: 0 auto;
         }
     }
 }

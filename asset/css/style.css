@@ -350,12 +350,16 @@ body {
   color: #999;
   text-align: center;
 }
-.footer-banner {
-  display: block;
+.footer .ad-box {
   margin-bottom: 10px;
   background: #fff;
 }
-.footer-banner img {
+.footer .ad-box .link-ad {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer .ad-box .link-ad img {
   width: 100%;
   max-width: 355px;
   margin: 0 auto;
@@ -664,18 +668,23 @@ body {
   padding: 10px 0 0 15px;
 }
 
-.sc-banner {
-  padding: 20px 0;
-}
-.sc-banner .link {
+.ad-box {
   display: block;
   width: 100%;
+  padding: 20px 0;
+  height: 150px;
+}
+.ad-box .link-ad {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 150px;
   background: linear-gradient(#23a0fa, #8fd4ff);
 }
-.sc-banner .link img {
-  margin: 0 auto;
+.ad-box .link-ad img {
   width: 320px;
   height: 150px;
+  margin: 0 auto;
 }
 
 .sc-top10 {
