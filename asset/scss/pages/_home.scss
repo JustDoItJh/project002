@@ -1,78 +1,14 @@
 
-.main {
-    padding-top: 75px;
-    width: 100%;
-    clear: both;
-}    
-
-hr.first-hr { border: 2px solid #eee; }
-
 // ---------------------------- 최근 본 웹툰 Section ----------------------------
 .sc-latest {
     padding: 20px 0 15px;
 
-    .latest-head {
-        position: relative;
-        height: 30px;
-        line-height: 30px;
-        padding: 0 15px;
-
-        .title {
-            float: left;
-            font-size: 15px;
-            font-weight: 500;
-        }
-        .link-mark {
-            display: inline-block;
-            width: 30px; height: 20px;
-            background: #f00;
-            margin: 5px 0 5px 5px;
-        }
-        .link-more {
-            float: right;
-            font-size: 13px;
-            font-weight: 300;
-            color: #999;
-
-            &::after {
-                content: ">";
-                margin-left: 5px;
-            }
-        }
-
-        &::after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-    }
 
     .latest {
-        overflow: hidden;
-        width: 100%;
+        
         padding: 10px 0 0 15px;
 
-        &-list { display: flex; }
-
-        &-item {
-            padding-right: 5px;
-            .link {
-                display: block;
-                
-                .thumb {
-                    overflow: hidden;
-                    width: 78px; height: 55px;
-                    border-radius: 2px;
-                    border: 1px solid #eee;
-                }
-                .title {
-                    display: block;
-                    text-align: center;
-                    font-size: 12px;
-                    padding-top: 5px;
-                }
-            }
-        }
+        
     }
 
 }
@@ -95,105 +31,10 @@ hr.first-hr { border: 2px solid #eee; }
 // ---------------------------- 실시간랭킹 TOP10 Section ----------------------------
 .sc-top10 {
     padding: 20px 0;
-
-    .top10-head {
-        padding: 0 15px;
-
-        .title {
-            float: left;
-            font-size: 15px;
-            font-weight: 500;
-        }
-        .switch-box {
-            float: right;
-            font-size: 13px;
-            font-weight: 300;
-
-            .btn-switch {
-                padding: 0 8px ;
-                margin-right: -10px;
-
-                &:last-child::before {
-                    content: "";
-                    display: inline-block;
-                    vertical-align: -1px;
-                    background: #000;
-                    width: 1px;
-                    height: 11px;
-                    margin-right: 8px;
-                }
-            }
-        }
-        &::after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-    }
-
-    .top10 {
-        overflow: hidden;
-        margin-top: 10px;
-        height: 300px;
-        padding-right: 40px;
-        box-sizing: border-box;
-
-        &-area { width: 100%; }
-            
-        &-list { padding: 0 15px; }
-                
-        &-item {
-            margin-top: 5px;
-            &:first-child {margin-top: 0;}
-
-            .link {
-                display: block;
-                .thumb {
-                    overflow: hidden;
-                    float: left;
-                    width: 78px; height: 55px;
-                    img {
-                        height: 100%;
-                        width: auto;
-                        margin: auto;
-                    }
-                    
-                }
-                .info {
-                    overflow: hidden;
-                    height: 55px;
-                    padding-left: 15px;
-                    .rank {
-                        float: left;
-                        line-height: 55px;
-                        margin-right: 15px;
-                        width: 30px;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                    .text-box {
-                        float: left;
-                        height: 55px;
-                        padding: 7px 0;
-                        .title {
-                            font-size: 14px;
-                        }
-                        .text-sub {
-                            font-size: 12px;
-                            color: #999;
-                        }
-                        
-                    }
-                }
-            }
-        }
-    }
+    margin-bottom: 5px;    
 }
 
-hr.second-hr {
-    border: 5px solid #eee;
-    margin: 20px 0;
-}
+    
 
 // ---------------------------- 이달의 신작 Section ----------------------------
 .sc-new {
@@ -276,101 +117,24 @@ hr.second-hr {
 // ---------------------------- 연령별, 성별 실시간 랭킹 Section ----------------------------
 .sc-age {
     padding: 20px 0;
-    h2.title {
-        padding-left: 15px;
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .group-area {
+    .group-sort {
         position: relative;
         overflow: hidden;
-        padding-left: 2px;
-        .group-wrap {
-            display: flex;
-            justify-content: space-around;
-            padding: 5px 0;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 0;
 
-            .btn-switch {
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 15px;
-                color: #999;
-
-                &:first-child {
-                    color: #000;
-                }
+        .btn-sort {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 15px;
+            color: #999;
+            &.active {
+                color: #000;
             }
         }
     }
-
-    .age-cont {
-        margin-top: 10px;
-        height: 300px;
-        padding-right: 40px;
-        box-sizing: border-box;
-
-        .swiper-wrapper {
-            width: 100%; height: 100%;
-            
-            .webtoon-list {
-                padding: 0 15px;
-                .webtoon-item {
-                    margin-top: 5px;
-                    &:first-child {margin-top: 0;}
-
-                    .link {
-                        display: block;
-                        .thumb {
-                            float: left;
-                            width: 78px; height: 55px;
-                            img {
-                                height: 100%;
-                                width: auto;
-                                margin: auto;
-                            }
-                            
-                        }
-                        .info {
-                            overflow: hidden;
-                            height: 55px;
-                            padding-left: 15px;
-                            .rank {
-                                float: left;
-                                line-height: 55px;
-                                margin-right: 15px;
-                                width: 30px;
-                                font-size: 20px;
-                                text-align: center;
-                                
-                            }
-                            .text-box {
-                                float: left;
-                                padding: 10px 0;
-                                height: 55px;
-                                
-
-                                strong.title {
-                                    @include multi-ellipsis(14px, 18px, 1);
-                                    font-weight: 400;
-                                    
-                                }
-                                .author {
-                                    font-size: 12px;
-                                    color: #999;
-                                }
-                                
-                            }
-                        }
-                        &::after {
-                            content: "";
-                            display: block;
-                            clear: both;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
 }
 
 

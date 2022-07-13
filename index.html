@@ -12,18 +12,24 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="gnb-area">
-            <h1 class="logo"><span class="blind">네이버</span></h1>
-            <a href="" class="link-webtoon">웹툰</a>
-            <a href="" class="link-webnovel">웹소설</a>
-            <a href="" class="link-webseries">시리즈</a>
+
+        <div class="group-flex">
+            <div class="gnb-area">
+                <h1 class="logo"><a href=""><span class="blind">네이버</span></a></h1>
+                <a href="" class="link-nav link-active">웹툰</a>
+                <a href="" class="link-nav">웹소설</a>
+                <a href="" class="link-nav">시리즈</a>
+            </div>
+            
+            <div class="util-area">
+                <a href="" class="link-search"><span class="blind">검색 페이지로 이동</span></a>
+                <a href="" class="link-my"><span class="blind">MY PAGE로 이동</span></a>
+            </div>
         </div>
-        <a href="" class="link-search"><span class="blind">검색 페이지로 이동</span></a>
-        <a href="" class="link-my"><span class="blind">MY PAGE로 이동</span></a>
 
         <div class="lnb-area">
             <ul class="lnb-list">
-                <li class="lnb-item">
+                <li class="lnb-item active">
                     <a href="" class="link"><span class="text">홈</span></a>
                 </li>
                 <li class="lnb-item">
@@ -41,25 +47,17 @@
 
     <!-- main contents -->
     <main class="main">
-        <hr class="first-hr">
 
         <!-- 최근 본 웹툰 Section -->
         <section class="sc-latest">
-            <div class="latest-head">
+            <div class="group-title">
                 <h2 class="title">최근 본 웹툰</h2>
                 <a href="" class="link-mark"><span class="blind">동기화 링크</span></a>
                 <a href="" class="link-more"><span class="blind">최근 본 웹툰 목록으로 이동</span>4</a>
             </div>
             <div class="latest">
-                <ul class="latest-list">
-                    <li class="latest-item">
-                        <a href="" class="link">
-                            <div class="thumb">
-                                <img src="./asset/images/latest.jpg" alt="최근 본 웹툰">
-                            </div>
-                            <strong class="title">외모지상주의</strong>
-                        </a>
-                    </li>
+                <ul class="toon-list row-small">
+                    
                 </ul>
             </div>
         </section>
@@ -73,67 +71,29 @@
 
         <!-- 실시간랭킹 TOP10 Section -->
         <section class="sc-top10">
-            <div class="top10-head">
+            <div class="group-title rising">
                 <h2 class="title">실시간랭킹 TOP10</h2>
-                <div class="switch-box">
-                    <button class="btn-switch">웹툰</button>
-                    <button class="btn-switch">베스트도전</button>
+                <div class="sort-area">
+                    <button class="btn-sort active">웹툰</button>
+                    <button class="btn-sort">베스트도전</button>
                 </div>
             </div>
-            <div class="swiper top10">
+            <div class="swiper">
                 <div class="swiper-wrapper"> <!-- 랭킹1~5위 페이지 옆으로 넘김 -->
-                    <div class="swiper-slide top10-area">
-                        <ul class="top10-list">
-                            <li class="top10-item">
-                                <a href="" class="link">
-                                    <div class="thumb">
-                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
-                                    </div>
-                                    <div class="info">
-                                        <em class="rank">1</em>
-                                        <div class="text-box">
-                                            <p class="text-main">
-                                                <strong class="title">뷰티풀 군바리</strong>
-                                                <span class="ic-up"><span class="blind">up</span></span>
-                                            </p>
-                                            <p class="text-sub">336화_단합 (4)</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="swiper-slide">
+                        <ul class="toon-list col-small">
 
-                    <div class="swiper-slide top10-area"> <!-- 랭킹6~10위 페이지 옆으로 넘김 -->
-                        <ul class="top10-list">
-                            <li class="top10-item">
-                                <a href="" class="link">
-                                    <div class="thumb">
-                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
-                                    </div>
-                                    <div class="info">
-                                        <em class="rank">6</em>
-                                        <div class="text-box">
-                                            <p class="text-main">
-                                                <strong class="title">뷰티풀 군바리</strong>
-                                                <span class="ic-up"><span class="blind">up</span></span>
-                                            </p>
-                                            <p class="text-sub">336화_단합 (4)</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr class="second-hr">
 
         <!-- 이달의 신작 Section -->
         <section class="sc-new">
-            <div class="new-head">
+            <div class="group-title">
                 <h2 class="title">이달의 신작</h2>
                 <div class="num-box">
                     <em class="curr-page">
@@ -144,8 +104,7 @@
                     
                 </div>
             </div>
-
-            <div class="swiper new-cont">
+            <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="" class="link">
@@ -177,31 +136,139 @@
 
         <!-- 연령별/성별 실시간 랭킹 Section -->
         <section class="sc-age">
-            <h2 class="title">연령별·성별 실시간 랭킹</h2>
-            <div class="group-area">
-                <div class="group-wrap">
-                    <button class="btn-switch">10대여자</button>
-                    <button class="btn-switch">10대남자</button>
-                    <button class="btn-switch">20대여자</button>
-                    <button class="btn-switch">20대남자</button>
-                    <button class="btn-switch">30대여자</button>
-                    <button class="btn-switch">30대남자</button>
-                </div>
+            <div class="group-title">
+                <h2 class="title">연령별·성별 실시간 랭킹</h2>
             </div>
-            <div class="swiper age-cont">
+            <div class="group-sort">
+                <button class="btn-sort active">10대여자</button>
+                <button class="btn-sort">10대남자</button>
+                <button class="btn-sort">20대여자</button>
+                <button class="btn-sort">20대남자</button>
+                <button class="btn-sort">30대여자</button>
+                <button class="btn-sort">30대남자</button>
+            </div>
+            <div class="swiper">
                 <div class="swiper-wrapper">  <!-- 연령별·성별 div -->
                     <div class="swiper-slide">
-                        <ul class="webtoon-list">
-                            <li class="webtoon-item">
-                                <a href="" class="link">
+                        <ul class="toon-list col-small">
+                            <li class="toon-item">
+                                <a href="" class="link-toon">
                                     <div class="thumb">
-                                        <img src="./asset/images/age1.jpg" alt="연령별·성별 실시간 랭킹 이미지">
+                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
                                     </div>
                                     <div class="info">
                                         <em class="rank">1</em>
                                         <div class="text-box">
-                                            <strong class="title">칼가는 소녀</strong>
-                                            <p class="author">오리</p>
+                                            <p class="text-main">
+                                                  <strong class="title">뷰티풀 군바리</strong>
+                                                <span class="ic-up"><span class="blind">up</span></span>
+                                            </p>
+                                            <span class="text-sub">336화_단합 (4)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="toon-list col-small">
+                            <li class="toon-item">
+                                <a href="" class="link-toon">
+                                    <div class="thumb">
+                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
+                                    </div>
+                                    <div class="info">
+                                        <em class="rank">2</em>
+                                        <div class="text-box">
+                                            <p class="text-main">
+                                                <strong class="title">뷰티풀 군바리</strong>
+                                                <span class="ic-up"><span class="blind">up</span></span>
+                                            </p>
+                                            <span class="text-sub">336화_단합 (4)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="toon-list col-small">
+                            <li class="toon-item">
+                                <a href="" class="link-toon">
+                                    <div class="thumb">
+                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
+                                    </div>
+                                    <div class="info">
+                                        <em class="rank">3</em>
+                                        <div class="text-box">
+                                            <p class="text-main">
+                                                <strong class="title">뷰티풀 군바리</strong>
+                                                <span class="ic-up"><span class="blind">up</span></span>
+                                            </p>
+                                            <span class="text-sub">336화_단합 (4)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="toon-list col-small">
+                            <li class="toon-item">
+                                <a href="" class="link-toon">
+                                    <div class="thumb">
+                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
+                                    </div>
+                                    <div class="info">
+                                        <em class="rank">4</em>
+                                        <div class="text-box">
+                                            <p class="text-main">
+                                                <strong class="title">뷰티풀 군바리</strong>
+                                                <span class="ic-up"><span class="blind">up</span></span>
+                                            </p>
+                                            <span class="text-sub">336화_단합 (4)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="toon-list col-small">
+                            <li class="toon-item">
+                                <a href="" class="link-toon">
+                                    <div class="thumb">
+                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
+                                    </div>
+                                    <div class="info">
+                                        <em class="rank">5</em>
+                                        <div class="text-box">
+                                            <p class="text-main">
+                                                <strong class="title">뷰티풀 군바리</strong>
+                                                <span class="ic-up"><span class="blind">up</span></span>
+                                            </p>
+                                            <span class="text-sub">336화_단합 (4)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="toon-list col-small">
+                            <li class="toon-item">
+                                <a href="" class="link-toon">
+                                    <div class="thumb">
+                                        <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
+                                    </div>
+                                    <div class="info">
+                                        <em class="rank">6</em>
+                                        <div class="text-box">
+                                            <p class="text-main">
+                                                <strong class="title">뷰티풀 군바리</strong>
+                                                <span class="ic-up"><span class="blind">up</span></span>
+                                            </p>
+                                            <span class="text-sub">336화_단합 (4)</span>
                                         </div>
                                     </div>
                                 </a>
@@ -209,74 +276,38 @@
                         </ul>
                     </div>
 
-                    <div class="swiper-slide">
-                        <ul class="webtoon-list">
-                            <li class="webtoon-item">
-                                <a href="" class="link">
-                                    <div class="thumb">
-                                        <img src="./asset/images/age2.jpg" alt="연령별·성별 실시간 랭킹 이미지">
-                                    </div>
-                                    <div class="info">
-                                        <em class="rank">1</em>
-                                        <div class="text-box">
-                                            <strong class="title">참교육</strong>
-                                            <p class="author">채용택 / 한가람</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- 웹툰 이미지 배너 -->
-        <section class="sc-banner">
+        <div class="ad-box">
             <a href="" class="link">
                 <img src="./asset/images/banner.jpg" alt="배너 이미지">
             </a>
-        </section>
+        </div>
 
         <!-- 무료로 볼 마지막 기회 Section -->
         <section class="sc-recommend">
-            <h2 class="title">무료로 볼 마지막 기회!</h2>
-            <div class="recommend">
-                <ul class="recommend-list">
-                    <li class="recommend-item">
-                        <a href="" class="link">
+            <div class="group-title">
+                <h2 class="title">무료로 볼 마지막 기회!</h2>
+            </div>
+            <div class="scroll-area">
+                <ul class="toon-list">
+                    <li class="toon-item">
+                        <a href="" class="link-toon">
                             <div class="thumb">
-                                <img src="./asset/images/recommend1.jpg" alt="추천 웹툰">
+                                <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
                             </div>
-                            <strong class="title">위대한 겸상</strong>
-                            <p class="author">홍치</p>
-                        </a>
-                    </li>
-                    <li class="recommend-item">
-                        <a href="" class="link">
-                            <div class="thumb">
-                                <img src="./asset/images/recommend1.jpg" alt="추천 웹툰">
+                            <div class="info">
+                                <div class="text-box">
+                                    <p class="text-main">
+                                        <strong class="title">뷰티풀 군바리</strong>
+                                        <span class="ic-up"><span class="blind">up</span></span>
+                                    </p>
+                                    <span class="text-sub">336화_단합 (4)</span>
+                                </div>
                             </div>
-                            <strong class="title">위대한 겸상</strong>
-                            <p class="author">홍치</p>
-                        </a>
-                    </li>
-                    <li class="recommend-item">
-                        <a href="" class="link">
-                            <div class="thumb">
-                                <img src="./asset/images/recommend1.jpg" alt="추천 웹툰">
-                            </div>
-                            <strong class="title">위대한 겸상</strong>
-                            <p class="author">홍치</p>
-                        </a>
-                    </li>
-                    <li class="recommend-item">
-                        <a href="" class="link">
-                            <div class="thumb">
-                                <img src="./asset/images/recommend1.jpg" alt="추천 웹툰">
-                            </div>
-                            <strong class="title">위대한 겸상</strong>
-                            <p class="author">홍치</p>
                         </a>
                     </li>
                 </ul>
@@ -284,51 +315,33 @@
         </section>
 
         <!-- 웹툰 이미지 배너 -->
-        <section class="sc-banner">
+        <div class="ad-box">
             <a href="" class="link">
                 <img src="./asset/images/banner.jpg" alt="배너 이미지">
             </a>
-        </section>
+        </div>
 
         <!-- 소설의 감동을 웹툰으로! Section -->
         <section class="sc-recommend">
-            <h2 class="title">소설의 감동을 웹툰으로!</h2>
-            <div class="recommend">
-                <ul class="recommend-list">
-                    <li class="recommend-item">
-                        <a href="" class="link">
+            <div class="group-title">
+                <h2 class="title">소설의 감동을 웹툰으로!</h2>
+            </div>
+            <div class="scroll-area">
+                <ul class="toon-list">
+                    <li class="toon-item">
+                        <a href="" class="link-toon">
                             <div class="thumb">
-                                <img src="./asset/images/recommend2.jpg" alt="추천 웹툰">
+                                <img src="./asset/images/top10.jpg" alt="실시간랭킹 Top10">
                             </div>
-                            <strong class="title">마법사가 죽음을 맞이하는 방법</strong>
-                            <p class="author">박젶 / 주은설</p>
-                        </a>
-                    </li>
-                    <li class="recommend-item">
-                        <a href="" class="link">
-                            <div class="thumb">
-                                <img src="./asset/images/recommend2.jpg" alt="추천 웹툰">
+                            <div class="info">
+                                <div class="text-box">
+                                    <p class="text-main">
+                                        <strong class="title">뷰티풀 군바리</strong>
+                                        <span class="ic-up"><span class="blind">up</span></span>
+                                    </p>
+                                    <span class="text-sub">336화_단합 (4)</span>
+                                </div>
                             </div>
-                            <strong class="title">마법사가 죽음을 맞이하는 방법</strong>
-                            <p class="author">박젶 / 주은설</p>
-                        </a>
-                    </li>
-                    <li class="recommend-item">
-                        <a href="" class="link">
-                            <div class="thumb">
-                                <img src="./asset/images/recommend2.jpg" alt="추천 웹툰">
-                            </div>
-                            <strong class="title">마법사가 죽음을 맞이하는 방법</strong>
-                            <p class="author">박젶 / 주은설</p>
-                        </a>
-                    </li>
-                    <li class="recommend-item">
-                        <a href="" class="link">
-                            <div class="thumb">
-                                <img src="./asset/images/recommend2.jpg" alt="추천 웹툰">
-                            </div>
-                            <strong class="title">마법사가 죽음을 맞이하는 방법</strong>
-                            <p class="author">박젶 / 주은설</p>
                         </a>
                     </li>
                 </ul>
@@ -341,21 +354,25 @@
     <footer class="footer">
         
         <!-- 배너 -->
-        <a href="" class="footer-banner">
-            <img src="./asset/images/footer.jpg" alt="footer 배너 이미지">
-        </a>
+        <div class="ad-box">
+            <a href="" class="">
+                <img src="./asset/images/footer.jpg" alt="!@#@!#!@#!@#!@#!@#@!">
+            </a>
+        </div>
 
         <!-- 링크 사이트 -->
-        <ul class="site-list">
-            <li class="site-item"><a href="">웹툰</a></li>
-            <li class="site-item"><a href="">웹소설</a></li>
-            <li class="site-item"><a href="">시리즈</a></li>
-            <li class="site-item"><a href="">시리즈온</a></li>
-        </ul>
+        <nav class="group-nav">
+            <ul class="site-list">
+                <li class="site-item"><a href="">웹툰</a></li>
+                <li class="site-item"><a href="">웹소설</a></li>
+                <li class="site-item"><a href="">시리즈</a></li>
+                <li class="site-item"><a href="">시리즈온</a></li>
+            </ul>
+        </nav>
 
         <!-- footer info -->
-        <div class="info">
-            <div class="service">
+        <div class="group-info">
+            <div class="service-area">
                 <ul class="service-list">
                     <li class="service-item"><a href="">로그인</a></li>
                     <li class="service-item"><a href="">PC버전</a></li>
@@ -363,9 +380,9 @@
                 </ul>
             </div>
 
-            <div class="info-hide">
+            <div class="info-area">
                 <button class="btn-info">네이버웹툰(유) 사업자 정보</button>
-                <div class="info-hideArea">
+                <div class="hide-box">
                     <ul>
                         <li>사업자 등록번호 : 669-86-01888</li>
                         <li>통신판매업 신고번호 : 2020-성남분당B-0719</li>
@@ -414,17 +431,10 @@
         </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script> -->
     <script src="./asset/js/common.js"></script>
     <script src="./asset/js/main.js"></script>
-
 </body>
 
 </html>

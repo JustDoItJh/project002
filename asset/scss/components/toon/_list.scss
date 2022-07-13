@@ -1,0 +1,100 @@
+.toon-list{
+    .toon-item{}
+    .link-toon{display: block;}
+    .thumb {
+        overflow: hidden;
+        border-radius: 2px;
+        border: 1px solid #eee;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .info{
+        .text-box{}
+        .text-main{}
+        .title {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            padding-top: 5px;
+        }
+    }
+    .ic-up{
+        @extend .sp-bg2;
+        display: inline-block;
+        width: 22px;
+        height: 12px;
+        background-position: -30px -75px;
+    }
+
+    // 개별
+    &.row-small{
+        display: flex;
+        overflow-x: auto;
+        @extend .hide-scroll;
+        .toon-item{
+            margin-right: 6px;
+        }
+        .thumb {
+            position: relative;
+            width: 78px;height: 55px;
+            .ic-up{
+                position: absolute;
+                top: 4px;left: 4px;
+            }
+        }
+    }
+    &.row-medium{}
+    &.col-small{
+        margin-top: 12px;
+        .toon-item{
+            padding: 0 15px;
+            &+.toon-item{
+                margin-top: 5px;
+            }
+        }
+        .link-toon{
+            display: flex;
+        }
+        .thumb {
+            position: relative;
+            width: 78px; height: 55px;
+        }
+        .info {
+            overflow: hidden;
+            height: 55px;
+            padding-left: 15px;
+            flex: 1;
+            display: flex;
+            .ic-up {
+                vertical-align: 0;
+            }
+            .rank {
+                line-height: 55px;
+                margin-right: 15px;
+                width: 30px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .text-box {
+                height: 55px;
+                padding: 7px 0;
+                flex: 1;
+                .title {
+                    display: inline-block;
+                    font-size: 14px;
+                }
+                .text-sub {
+                    font-size: 12px;
+                    color: #999;
+                }
+                
+            }
+        }
+
+
+    }
+
+}

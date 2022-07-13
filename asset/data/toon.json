@@ -1,0 +1,43 @@
+{
+
+
+    "recent":[
+        {
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "isUp": true
+
+        },
+        {
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age2.jpg",
+            "infoTitle":"참교육",
+            "isUp": false
+
+        }
+    ],
+
+    "top10":[
+        {   
+            "rank":"1",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"화합(4)",
+            "isUp": true
+
+        },
+        {   
+            "rank":"2",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age2.jpg",
+            "infoTitle":"참교육",
+            "infoRound":"화합(4)",
+            "isUp": true
+
+        }
+    ]
+
+
+}

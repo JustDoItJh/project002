@@ -58,6 +58,9 @@ body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+  background: #eee;
 }
 
 *,
@@ -185,8 +188,17 @@ textarea::-webkit-outer-spin-button {
 body {
   font-family: "Noto Sans KR", sans-serif;
   color: #000;
-  background: #fff;
+  background: #eee;
   font-size: 14px;
+}
+
+.main {
+  padding-top: 105px;
+  width: 100%;
+  clear: both;
+}
+.main > * {
+  background: #fff;
 }
 
 .blind {
@@ -196,6 +208,30 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
   margin: -1px;
+}
+
+.sp-bg, .group-title .link-more::after, .group-title .link-mark, .header .util-area .link-my::after, .header .util-area .link-search::after, .header .gnb-area .logo {
+  background-image: url(https://ssl.pstatic.net/static/m/comic/im/sp/sp_comic_7b916013.png);
+  background-size: 330px 312px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sp-bg2, .toon-list .ic-up {
+  background-image: url(https://ssl.pstatic.net/static/m/comic/im/sp/sp_badge_a57dcfd1.png);
+  background-size: 114px 101px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hide-scroll, .toon-list.row-small {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scroll .box::-webkit-scrollbar, .toon-list.row-small .box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .header {
@@ -209,68 +245,67 @@ body {
   transition-duration: 0.5s;
 }
 .header.hide {
-  transform: translateY(-50%);
+  transform: translateY(-60px);
 }
 .header.active {
   background: #fff;
+}
+.header .group-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+  padding: 0 16px;
 }
 .header .gnb-area {
   position: relative;
   height: 40px;
   font-size: 19px;
-}
-.header .gnb-area h1, .header .gnb-area a {
-  float: left;
+  display: flex;
+  align-items: center;
 }
 .header .gnb-area .logo {
-  margin: 13px 5px 13px 13px;
-  width: 20px;
-  height: 20px;
-  background: #f00;
+  width: 17px;
+  height: 16px;
+  margin-right: 10px;
+  background-position: -298px -182px;
 }
-.header .gnb-area .link-webnovel::before {
+.header .gnb-area .link-nav:not(.link-active) {
+  color: #ccc;
+}
+.header .gnb-area .link-nav + .link-nav::before {
   content: "";
   display: inline-block;
   vertical-align: -1px;
   margin: 0 6px;
   width: 1px;
-  background: #000;
+  background: #ccc;
   height: 15px;
 }
-.header .gnb-area .link-webseries::before {
+.header .util-area {
+  display: flex;
+}
+.header .util-area .link-search {
+  padding: 8px;
+}
+.header .util-area .link-search::after {
   content: "";
-  display: inline-block;
-  vertical-align: -1px;
-  margin: 0 6px;
-  width: 1px;
-  background: #000;
-  height: 15px;
+  width: 16px;
+  height: 16px;
+  background-position: -298px -237px;
 }
-.header .gnb-area .link-webtoon, .header .gnb-area .link-webnovel, .header .gnb-area .link-webseries {
-  padding: 8px 0 0 5px;
+.header .util-area .link-my {
+  padding: 8px 0 8px 8px;
 }
-.header .link-search {
-  position: absolute;
-  top: 10px;
-  right: 55px;
-  width: 20px;
-  height: 20px;
-  background: #f00;
-  padding: 8px;
-}
-.header .link-my {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 20px;
-  height: 20px;
-  background: #f00;
-  padding: 8px;
+.header .util-area .link-my::after {
+  content: "";
+  width: 29px;
+  height: 16px;
+  background-position: -180px -245px;
 }
 .header .lnb-area {
   position: relative;
   text-align: center;
-  clear: both;
   margin: 8px 0 0;
   font-size: 16px;
   border-bottom: 1px solid #ebebeb;
@@ -281,18 +316,31 @@ body {
   max-width: 550px;
   margin: 0 auto;
 }
-.header .lnb-area .lnb-list .text {
-  display: inline-block;
-  padding-bottom: 3px;
-}
-.header .lnb-area .lnb-list .text:hover {
-  color: #00d564;
-  border-bottom: 2px solid #00d564;
-}
-.header::after {
-  content: "";
+.header .lnb-area .lnb-item a {
   display: block;
-  clear: both;
+  height: 42px;
+  padding: 0 22px;
+  font-size: 15px;
+  line-height: 41px;
+  white-space: nowrap;
+  position: relative;
+}
+.header .lnb-area .lnb-item .text {
+  display: block;
+  position: relative;
+  padding: 0 3px;
+}
+.header .lnb-area .lnb-item.active {
+  color: #00d564;
+}
+.header .lnb-area .lnb-item.active .text::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #00d564;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
 }
 
 .footer {
@@ -473,78 +521,147 @@ body {
   color: #000;
 }
 
-.main {
-  padding-top: 75px;
-  width: 100%;
-  clear: both;
+.group-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+.group-title .title {
+  font-weight: 15;
+  font-weight: bold;
+}
+.group-title .link-mark {
+  background-position: -114px -207px;
+  width: 32px;
+  height: 27px;
+  margin: -2px 0 -5px 3px;
+  margin-right: auto;
+}
+.group-title .link-more {
+  font-size: 12px;
+  color: #999;
+}
+.group-title .link-more::after {
+  content: "";
+  background-position: -318px -113px;
+  width: 7px;
+  height: 10px;
+  margin: 4px 0 0 3px;
+}
+.group-title .sort-area {
+  color: #999;
+  font-size: 12px;
+}
+.group-title .sort-area .btn-sort.active {
+  color: #000;
+}
+.group-title .sort-area .btn-sort + .btn-sort:before {
+  content: "";
+  display: inline-block;
+  vertical-align: -1px;
+  width: 1px;
+  height: 11px;
+  background: #eee;
+  margin: 0 5px;
 }
 
-hr.first-hr {
-  border: 2px solid #eee;
+.toon-list .link-toon {
+  display: block;
+}
+.toon-list .thumb {
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid #eee;
+}
+.toon-list .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.toon-list .info .title {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.toon-list .ic-up {
+  display: inline-block;
+  width: 22px;
+  height: 12px;
+  background-position: -30px -75px;
+}
+.toon-list.row-small {
+  display: flex;
+  overflow-x: auto;
+}
+.toon-list.row-small .toon-item {
+  margin-right: 6px;
+}
+.toon-list.row-small .thumb {
+  position: relative;
+  width: 78px;
+  height: 55px;
+}
+.toon-list.row-small .thumb .ic-up {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+.toon-list.col-small {
+  margin-top: 12px;
+}
+.toon-list.col-small .toon-item {
+  padding: 0 15px;
+}
+.toon-list.col-small .toon-item + .toon-item {
+  margin-top: 5px;
+}
+.toon-list.col-small .link-toon {
+  display: flex;
+}
+.toon-list.col-small .thumb {
+  position: relative;
+  width: 78px;
+  height: 55px;
+}
+.toon-list.col-small .info {
+  overflow: hidden;
+  height: 55px;
+  padding-left: 15px;
+  flex: 1;
+  display: flex;
+}
+.toon-list.col-small .info .ic-up {
+  vertical-align: 0;
+}
+.toon-list.col-small .info .rank {
+  line-height: 55px;
+  margin-right: 15px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.toon-list.col-small .info .text-box {
+  height: 55px;
+  padding: 7px 0;
+  flex: 1;
+}
+.toon-list.col-small .info .text-box .title {
+  display: inline-block;
+  font-size: 14px;
+}
+.toon-list.col-small .info .text-box .text-sub {
+  font-size: 12px;
+  color: #999;
 }
 
 .sc-latest {
   padding: 20px 0 15px;
 }
-.sc-latest .latest-head {
-  position: relative;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 15px;
-}
-.sc-latest .latest-head .title {
-  float: left;
-  font-size: 15px;
-  font-weight: 500;
-}
-.sc-latest .latest-head .link-mark {
-  display: inline-block;
-  width: 30px;
-  height: 20px;
-  background: #f00;
-  margin: 5px 0 5px 5px;
-}
-.sc-latest .latest-head .link-more {
-  float: right;
-  font-size: 13px;
-  font-weight: 300;
-  color: #999;
-}
-.sc-latest .latest-head .link-more::after {
-  content: ">";
-  margin-left: 5px;
-}
-.sc-latest .latest-head::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .sc-latest .latest {
-  overflow: hidden;
-  width: 100%;
   padding: 10px 0 0 15px;
-}
-.sc-latest .latest-list {
-  display: flex;
-}
-.sc-latest .latest-item {
-  padding-right: 5px;
-}
-.sc-latest .latest-item .link {
-  display: block;
-}
-.sc-latest .latest-item .link .thumb {
-  overflow: hidden;
-  width: 78px;
-  height: 55px;
-  border-radius: 2px;
-  border: 1px solid #eee;
-}
-.sc-latest .latest-item .link .title {
-  display: block;
-  text-align: center;
-  font-size: 12px;
-  padding-top: 5px;
 }
 
 .sc-banner {
@@ -563,100 +680,7 @@ hr.first-hr {
 
 .sc-top10 {
   padding: 20px 0;
-}
-.sc-top10 .top10-head {
-  padding: 0 15px;
-}
-.sc-top10 .top10-head .title {
-  float: left;
-  font-size: 15px;
-  font-weight: 500;
-}
-.sc-top10 .top10-head .switch-box {
-  float: right;
-  font-size: 13px;
-  font-weight: 300;
-}
-.sc-top10 .top10-head .switch-box .btn-switch {
-  padding: 0 8px;
-  margin-right: -10px;
-}
-.sc-top10 .top10-head .switch-box .btn-switch:last-child::before {
-  content: "";
-  display: inline-block;
-  vertical-align: -1px;
-  background: #000;
-  width: 1px;
-  height: 11px;
-  margin-right: 8px;
-}
-.sc-top10 .top10-head::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.sc-top10 .top10 {
-  overflow: hidden;
-  margin-top: 10px;
-  height: 300px;
-  padding-right: 40px;
-  box-sizing: border-box;
-}
-.sc-top10 .top10-area {
-  width: 100%;
-}
-.sc-top10 .top10-list {
-  padding: 0 15px;
-}
-.sc-top10 .top10-item {
-  margin-top: 5px;
-}
-.sc-top10 .top10-item:first-child {
-  margin-top: 0;
-}
-.sc-top10 .top10-item .link {
-  display: block;
-}
-.sc-top10 .top10-item .link .thumb {
-  overflow: hidden;
-  float: left;
-  width: 78px;
-  height: 55px;
-}
-.sc-top10 .top10-item .link .thumb img {
-  height: 100%;
-  width: auto;
-  margin: auto;
-}
-.sc-top10 .top10-item .link .info {
-  overflow: hidden;
-  height: 55px;
-  padding-left: 15px;
-}
-.sc-top10 .top10-item .link .info .rank {
-  float: left;
-  line-height: 55px;
-  margin-right: 15px;
-  width: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-.sc-top10 .top10-item .link .info .text-box {
-  float: left;
-  height: 55px;
-  padding: 7px 0;
-}
-.sc-top10 .top10-item .link .info .text-box .title {
-  font-size: 14px;
-}
-.sc-top10 .top10-item .link .info .text-box .text-sub {
-  font-size: 12px;
-  color: #999;
-}
-
-hr.second-hr {
-  border: 5px solid #eee;
-  margin: 20px 0;
+  margin-bottom: 5px;
 }
 
 .sc-new {
@@ -747,98 +771,21 @@ hr.second-hr {
 .sc-age {
   padding: 20px 0;
 }
-.sc-age h2.title {
-  padding-left: 15px;
-  font-size: 15px;
-  font-weight: 500;
-}
-.sc-age .group-area {
+.sc-age .group-sort {
   position: relative;
   overflow: hidden;
-  padding-left: 2px;
-}
-.sc-age .group-area .group-wrap {
   display: flex;
   justify-content: space-around;
   padding: 5px 0;
 }
-.sc-age .group-area .group-wrap .btn-switch {
+.sc-age .group-sort .btn-sort {
   font-size: 14px;
   font-weight: 600;
   line-height: 15px;
   color: #999;
 }
-.sc-age .group-area .group-wrap .btn-switch:first-child {
+.sc-age .group-sort .btn-sort.active {
   color: #000;
-}
-.sc-age .age-cont {
-  margin-top: 10px;
-  height: 300px;
-  padding-right: 40px;
-  box-sizing: border-box;
-}
-.sc-age .age-cont .swiper-wrapper {
-  width: 100%;
-  height: 100%;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list {
-  padding: 0 15px;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item {
-  margin-top: 5px;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item:first-child {
-  margin-top: 0;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link {
-  display: block;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb {
-  float: left;
-  width: 78px;
-  height: 55px;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .thumb img {
-  height: 100%;
-  width: auto;
-  margin: auto;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info {
-  overflow: hidden;
-  height: 55px;
-  padding-left: 15px;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .rank {
-  float: left;
-  line-height: 55px;
-  margin-right: 15px;
-  width: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box {
-  float: left;
-  padding: 10px 0;
-  height: 55px;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box strong.title {
-  font-size: 14px;
-  line-height: 18px;
-  max-height: 18px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical; /* autoprefixer: off */
-  font-weight: 400;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link .info .text-box .author {
-  font-size: 12px;
-  color: #999;
-}
-.sc-age .age-cont .swiper-wrapper .webtoon-list .webtoon-item .link::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .sc-recommend {

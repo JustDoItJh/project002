@@ -1,9 +1,17 @@
 body {
     font-family: $font-kr;
     color: #000;
-    background: #fff;
+    background: #eee;
     font-size: 14px;
 }
+.main {
+    padding-top: 105px;
+    width: 100%;
+    clear: both;
+    &>*{
+        background: #fff;
+    }
+}    
 
 .blind{
     position: absolute;
@@ -14,11 +22,29 @@ body {
     margin: -1px;
 }
 
-// .gnb-area .logo::before {
-//     background-image: url(../images/sp-bg1.png);
-//     background-repeat: no-repeat;
-//     background-size: 330px 312px;
-//     display: inline-block;
-//     vertical-align: top;
-// }
+
+.sp-bg {
+    background-image: url(https://ssl.pstatic.net/static/m/comic/im/sp/sp_comic_7b916013.png);
+    background-size: 330px 312px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+.sp-bg2 {
+    background-image: url(https://ssl.pstatic.net/static/m/comic/im/sp/sp_badge_a57dcfd1.png);
+        -webkit-background-size: 114px 101px;
+        background-size: 114px 101px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: top;
+}
+
+
+.hide-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    .box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+    }
+}
 
