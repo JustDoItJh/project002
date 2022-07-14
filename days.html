@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 웹툰</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+
+        <div class="group-flex">
+            <div class="gnb-area">
+                <h1 class="logo"><a href=""><span class="blind">네이버</span></a></h1>
+                <a href="" class="link-nav link-active">웹툰</a>
+                <a href="" class="link-nav">웹소설</a>
+                <a href="" class="link-nav">시리즈</a>
+            </div>
+            
+            <div class="util-area">
+                <a href="" class="link-search"><span class="blind">검색 페이지로 이동</span></a>
+                <a href="" class="link-my"><span class="blind">MY PAGE로 이동</span></a>
+            </div>
+        </div>
+
+        <div class="lnb-area">
+            <ul class="lnb-list">
+                <li class="lnb-item">
+                    <a href="index.html" class="link"><span class="text">홈</span></a>
+                </li>
+                <li class="lnb-item active">
+                    <a href="days.html" class="link"><span class="text">요일별</span></a>
+                </li>
+                <li class="lnb-item">
+                    <a href="complete.html" class="link"><span class="text">완결작</span></a>
+                </li>
+                <li class="lnb-item">
+                    <a href="best.html" class="link"><span class="text">베스트도전</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sublnb-area">
+            <ul class="sublnb-list">
+                <li class="sublnb-item">
+                    <a href="" class="link">월</a>
+                </li>
+                <li class="sublnb-item">
+                    <a href="" class="link">화</a>
+                </li>
+                <li class="sublnb-item">
+                    <a href="" class="link">수</a>
+                </li>
+                <li class="sublnb-item active">
+                    <a href="" class="link">목</a>
+                </li>
+                <li class="sublnb-item">
+                    <a href="" class="link">금</a>
+                </li>
+                <li class="sublnb-item">
+                    <a href="" class="link">토</a>
+                </li>
+                <li class="sublnb-item">
+                    <a href="" class="link">일</a>
+                </li>
+                <li class="sublnb-item">
+                    <a href="" class="link">매일+</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- main contents -->
+    <main class="main">
+
+        <!-- 요일별 이달의 신작 -->
+        <section class="sc-common">
+            <div class="group-title">
+                <h2 class="title">이달의 신작</h2>
+                <div class="num-box">
+                    <em class="curr-page">
+                        <span class="blind">현재</span>
+                        <span class="curr"></span>
+                    </em>
+                    <span class="blind">전체</span>
+                </div>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new.png" alt="이달의 신작 이미지">
+                            </div>
+                            <div class="info">
+                                <strong class="title">불가침영역</strong>
+                                <span class="author">오후 / 백아빈</span>
+                                <p class="desc">아이돌 '레온'을 덕질하는 숨은 덕후인 주인공. 학교에선 모범생을 연기하고 부모님의 기대를 충족하기 위해 숨은 덕질을 계속하던 중, 자신의 최애와 완전 똑같이 생긴 '강아서'가 전학 온다. 아서는 시종일관 '레온'을 따라 하는 듯한 행동으로, 주인공의 신경을 긁기 시작하는데... 서로의 불가침 영역을 침범하기 시작하면서 부딪히는 미성숙한 그들의 성장 이야기.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new2.png" alt="이달의 신작 이미지">
+                            </div>
+                            <div class="info">
+                                <strong class="title">선을 넘은 연애</strong>
+                                <span class="author">서녜</span>
+                                <p class="desc">누나와 동생 같은 동갑내기 소꿉친구 '아라'와 '가람'.   고등학교 2학년이 된 두 사람은 8살 이후 처음으로 같은 반이 되면서 예상치 못한 방향으로 관계가 변하기 시작한다.  가람이가 그저 귀여운 아라와 그게 못마땅한 가람.  과연 두 사람은 연애라는 선을 넘을 수 있을까?</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-toon">
+            <div class="group-head">
+                <div class="select-area">
+                    <div class="select-title">인기순</div>
+                    <select name="" id="btn-sort" class="select-sort">
+                        <option value="all-popular" selected>인기순</option>
+                        <option value="f-popular">여성 인기순</option>
+                        <option value="m-popular">남성 인기순</option>
+                        <option value="hot-view">조회순</option>
+                        <option value="update">업데이트순</option>
+                    </select>
+                </div>
+                <button class="btn-interest">관심웹툰 먼저보기</button>
+            </div>
+
+            <div class="group-inner top">
+                <ul class="toon-list">
+                    <li class="toon-item">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new.png" alt="">
+                            </div>
+                            <div class="info">
+                                <strong class="title">불가침영역</strong>
+                                <span class="author">오후 / 백아빈</span>
+                                <span class="desc">관심 50만+</span>
+                                <span class="detail">
+                                    <span class="ic-up"><span class="blind">up</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="toon-item">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new.png" alt="">
+                            </div>
+                            <div class="info">
+                                <strong class="title">불가침영역</strong>
+                                <span class="author">오후 / 백아빈</span>
+                                <span class="desc">관심 50만+</span>
+                                <span class="detail">
+                                    <span class="ic-up"><span class="blind">up</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="toon-item">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new.png" alt="">
+                            </div>
+                            <div class="info">
+                                <strong class="title">불가침영역</strong>
+                                <span class="author">오후 / 백아빈</span>
+                                <span class="desc">관심 50만+</span>
+                                <span class="detail">
+                                    <span class="ic-up"><span class="blind">up</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="group-inner bottom">
+                <ul class="toon-list">
+                    <li class="toon-item">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new2.png" alt="">
+                            </div>
+                            <div class="info">
+                                <strong class="title">선을 넘은 연애</strong>
+                                <span class="author">서녜</span>
+                                <span class="desc">관심 10만+</span>
+                                <span class="detail">
+                                    <span class="ic-new"><span class="blind">new</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="toon-item">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new2.png" alt="">
+                            </div>
+                            <div class="info">
+                                <strong class="title">선을 넘은 연애</strong>
+                                <span class="author">서녜</span>
+                                <span class="desc">관심 10만+</span>
+                                <span class="detail">
+                                    <span class="ic-new"><span class="blind">new</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="toon-item">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new2.png" alt="">
+                            </div>
+                            <div class="info">
+                                <strong class="title">선을 넘은 연애</strong>
+                                <span class="author">서녜</span>
+                                <span class="desc">관심 10만+</span>
+                                <span class="detail">
+                                    <span class="ic-new"><span class="blind">new</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="toon-item">
+                        <a href="" class="link">
+                            <div class="thumb">
+                                <img src="./asset/images/new.png" alt="">
+                            </div>
+                            <div class="info">
+                                <strong class="title">불가침영역</strong>
+                                <span class="author">오후 / 백아빈</span>
+                                <span class="desc">관심 50만+</span>
+                                <span class="detail">
+                                    <span class="ic-ip"><span class="blind">up</span></span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        
+        <!-- 배너 -->
+        <div class="ad-box">
+            <a href="" class="link-foot">
+                <img src="./asset/images/footer.jpg" alt="이동 링크">
+            </a>
+        </div>
+
+        <!-- 링크 사이트 -->
+        <nav class="group-nav">
+            <ul class="site-list">
+                <li class="site-item"><a href="">웹툰</a></li>
+                <li class="site-item"><a href="">웹소설</a></li>
+                <li class="site-item"><a href="">시리즈</a></li>
+                <li class="site-item"><a href="">시리즈온</a></li>
+            </ul>
+        </nav>
+
+        <!-- footer info -->
+        <div class="group-info">
+            <div class="service-area">
+                <ul class="service-list">
+                    <li class="service-item"><a href="">로그인</a></li>
+                    <li class="service-item"><a href="">PC버전</a></li>
+                    <li class="service-item"><a href="">전체서비스</a></li>
+                </ul>
+            </div>
+
+            <div class="info-area">
+                <button class="btn-info">네이버웹툰(유) 사업자 정보</button>
+                <div class="hide-box">
+                    <ul>
+                        <li>사업자 등록번호 : 669-86-01888</li>
+                        <li>통신판매업 신고번호 : 2020-성남분당B-0719</li>
+                        <li>대표이사 : 김준구</li>
+                        <li>주소 : 경기도 성남시 분당구 분당내곡로 117, 9층 (백현동)</li>
+                        <li>고객센터 : 1588-3820</li>
+                        <li>이메일 : ccnaver@naver.com</li>
+                    </ul>
+                    <a href="" class="link-info">사업자 등록정보</a>
+                </div>
+            </div>
+
+            <p class="info-desc">
+                모든 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, <br>
+                이를 무단으로 이용하는 경우 관련 법령에 따라 법적 책임을 질 수 있습니다.
+            </p>
+
+            <div class="info-corpArea top">
+                <ul>
+                    <li><a href="">네이버웹툰 이용약관</a></li>
+                    <li><a href="">전용상품권 이용약관</a></li>
+                    <li><a href="" class="privacy">개인정보처리방침</a></li>
+                    <li><a href="">청소년보호정책</a></li>
+                    <li><a href="">웹툰 고객센터</a></li>
+                    <li><a href="">오류신고</a></li>
+                </ul>
+                <address>
+                    <a href="" class="link-addr">&copy;NAVER WEBTOON Limited.</a>
+                </address>
+            </div>
+            <div class="info-corpArea bottom">
+                <ul>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="" class="privacy">개인정보처리방침</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">결제도용신고</a></li>
+                    <li><a href="">저작권침해신고</a></li>
+                </ul>
+                <address>
+                    <a href="" class="link-addr">&copy; NAVER CORP.</a>
+                </address>
+            </div>
+
+            <!-- top button -->
+            <button class="btn-top"><span class="blind">top button</span>Top</button>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./asset/js/common.js"></script>
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>
