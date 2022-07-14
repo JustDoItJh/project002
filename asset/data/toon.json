@@ -24,7 +24,7 @@
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
-            "infoRound":"화합(4)",
+            "infoRound":"336화_단합 (4)",
             "isUp": true
 
         },
@@ -33,10 +33,62 @@
             "link":"타겟링크",
             "imgSrc":"./asset/images/age2.jpg",
             "infoTitle":"참교육",
-            "infoRound":"화합(4)",
+            "infoRound":"336화_단합 (4)",
             "isUp": true
 
         }
+    ],
+
+    "age":[
+        {
+            "rank":"1",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {
+            "rank":"2",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {
+            "rank":"3",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {
+            "rank":"4",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {
+            "rank":"5",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {
+            "rank":"6",
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        }
+
     ]
 
 

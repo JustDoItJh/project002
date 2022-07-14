@@ -6,63 +6,91 @@ $(function(){
   .then((response)  => response.json())
   .then((json) => {
     upHtml = `<span class="ic-up"><span class="blind">up</span></span>`;
+    startHtml = `<span class="ic-star"><span class="blind">별점</span></span>`;
 
-    const top10 = json.top10;
     const recent = json.recent;
+    const top10 = json.top10;
+    const age = json.age;
     
     let recenthtml = '';
     let top10html = '';
+    let agehtml = '';
 
     recent.forEach(element => {
       
-
       isUp = (element.isUp) ? upHtml : null;
 
       recenthtml += `<li class="toon-item">
-                <a href="${element.link}" class="link-toon">
-                    <div class="thumb">
-                        <img src="${element.imgSrc}" alt="${element.infoTitle}">
-                        ${isUp}
-                    </div>
-                    <div class="info">
-                        <div class="text-box">
-                            <p class="text-main">
-                                <strong class="title">${element.infoTitle}</strong>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </li>`;
+                        <a href="${element.link}" class="link-toon">
+                            <div class="thumb">
+                                <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                                ${isUp}
+                            </div>
+                            <div class="info">
+                                <div class="text-box">
+                                    <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>`;
     });
 
 
     top10.forEach(element => {
       
-    
-
       isUp = (element.isUp) ? upHtml : null;
 
       top10html += `<li class="toon-item">
-      <a href="${element.link}" class="link-toon">
-          <div class="thumb">
-              <img src="${element.imgSrc}" alt="${element.infoTitle}">
-          </div>
-          <div class="info">
-              <em class="rank">${element.rank}</em>
-              <div class="text-box">
-                  <p class="text-main">
-                      <strong class="title">${element.infoTitle}</strong>
-                      ${isUp}
-                  </p>
-                  <span class="text-sub">336화_단합 (4)</span>
-              </div>
-          </div>
-      </a>
-  </li>`;
+                        <a href="${element.link}" class="link-toon">
+                            <div class="thumb">
+                                <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                            </div>
+                            <div class="info">
+                                <em class="rank">${element.rank}</em>
+                                <div class="text-box">
+                                    <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                        ${isUp}
+                                    </p>
+                                    <span class="text-sub">${element.infoRound}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>`;
     });
+    
+
+    age.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      agehtml += `<li class="toon-item">
+                      <a href="${element.link}" class="link-toon">
+                          <div class="thumb">
+                              <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                          </div>
+                          <div class="info">
+                              <em class="rank">${element.rank}</em>
+                              <div class="text-box">
+                                  <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                        ${isUp}
+                                  </p>
+                                  <span class="text-sub">${element.infoRound}</span>
+                              </div>
+                          </div>
+                      </a>
+                  </li>`;
+    });
+
+    
 
     document.querySelector('.sc-latest .toon-list').innerHTML = recenthtml;
     document.querySelector('.sc-top10 .toon-list').innerHTML = top10html;
+    document.querySelector('.sc-age .toon-list').innerHTML = agehtml;
+    
 
   })
   
