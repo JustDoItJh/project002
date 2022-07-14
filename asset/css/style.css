@@ -210,7 +210,7 @@ body {
   margin: -1px;
 }
 
-.sp-bg, .sc-toon .group-head .btn-interest::before, .group-title .link-more::after, .group-title .link-mark, .header .util-area .link-my::after, .header .util-area .link-search::after, .header .gnb-area .logo {
+.sp-bg, .sc-typetoon .page-box .link-next::before, .sc-typetoon .page-box .link-prev::before, .sc-typetoon .group-head .btn-interest::before, .sc-toon .page-box .link-next::before, .sc-toon .page-box .link-prev::before, .sc-toon .group-head .btn-interest::before, .toon-list .ic-star, .group-title .link-more::after, .group-title .link-mark, .header .util-area .link-my::after, .header .util-area .link-search::after, .header .gnb-area .logo {
   background-image: url(../images/sp-bg1.png);
   background-size: 330px 312px;
   background-repeat: no-repeat;
@@ -226,11 +226,11 @@ body {
   vertical-align: top;
 }
 
-.hide-scroll, .toon-list.row-small {
+.hide-scroll, .sublnb-area .sublnb-list, .toon-list.row-small {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.hide-scroll .box::-webkit-scrollbar, .toon-list.row-small .box::-webkit-scrollbar {
+.hide-scroll .box::-webkit-scrollbar, .sublnb-area .sublnb-list .box::-webkit-scrollbar, .toon-list.row-small .box::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
@@ -376,14 +376,16 @@ body {
   color: #999;
   text-align: center;
 }
-.footer .ad-box {
+.footer .footer-ad {
   margin-bottom: 10px;
   background: #fff;
 }
-.footer .ad-box .link-foot {
+.footer .footer-ad .link-foot {
   display: block;
+  width: 100%;
+  height: 100%;
 }
-.footer .ad-box .link-foot img {
+.footer .footer-ad .link-foot img {
   width: 100%;
   height: auto;
   max-width: 355px;
@@ -627,6 +629,12 @@ body {
   width: 22px;
   height: 12px;
   background-position: -30px -75px;
+}
+.toon-list .ic-star {
+  display: inline-block;
+  background-position: -318px -70px;
+  width: 12px;
+  height: 12px;
 }
 .toon-list.row-small {
   display: flex;
@@ -892,12 +900,11 @@ body {
 }
 .sc-common .swiper .swiper-slide .link .thumb img {
   max-width: 100%;
-  height: auto;
-  padding-top: 10px;
+  height: 100%;
   background: rgb(250, 237, 161);
 }
 .sc-common .swiper .swiper-slide .link .info {
-  padding-top: 8px;
+  padding-top: 15px;
   overflow: hidden;
 }
 .sc-common .swiper .swiper-slide .link .info .title {
@@ -997,8 +1004,6 @@ body {
 }
 .sc-toon .group-inner .toon-list .toon-item .link .thumb img {
   background: rgb(250, 237, 161);
-  width: 150px;
-  height: 150px;
 }
 .sc-toon .group-inner .toon-list .toon-item .link .info {
   text-align: left;
@@ -1037,4 +1042,462 @@ body {
   height: 10px;
   background: #eee;
   margin-bottom: 160px;
+}
+
+.sc-common2 {
+  padding: 20px 0 0;
+}
+.sc-common2 .swiper {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 80px 0 15px;
+  height: 130px;
+  box-sizing: border-box;
+}
+.sc-common2 .swiper .swiper-slide {
+  width: 400px;
+  height: 100px;
+}
+.sc-common2 .swiper .swiper-slide .link {
+  position: relative;
+  display: block;
+}
+.sc-common2 .swiper .swiper-slide .link .thumb {
+  width: 110px;
+  height: 110px;
+  float: left;
+  margin-right: 15px;
+}
+.sc-common2 .swiper .swiper-slide .link .thumb img {
+  max-width: 100%;
+  height: 100%;
+  background: rgb(250, 237, 161);
+}
+.sc-common2 .swiper .swiper-slide .link .info {
+  padding-top: 15px;
+  overflow: hidden;
+}
+.sc-common2 .swiper .swiper-slide .link .info .title {
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+}
+.sc-common2 .swiper .swiper-slide .link .info .author {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  font-size: 12px;
+  margin: 2px 0 10px;
+  opacity: 0.5;
+}
+.sc-common2 .swiper .swiper-slide .link .info .desc {
+  font-size: 13px;
+  line-height: 15px;
+  max-height: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+  color: #444;
+  font-weight: 300;
+}
+
+.sublnb-area {
+  position: relative;
+  text-align: center;
+  padding: 8px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  background: #f8f8f9;
+}
+.sublnb-area .sublnb-list {
+  display: flex;
+  justify-content: flex-start;
+}
+.sublnb-area .sublnb-list .sublnb-item {
+  margin-left: 15px;
+}
+.sublnb-area .sublnb-list .sublnb-item a {
+  display: inline-block;
+  height: 25px;
+  padding: 0 7px;
+  margin: 2px 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  white-space: nowrap;
+}
+.sublnb-area .sublnb-list .sublnb-item.active {
+  border-radius: 35%;
+  color: #fff;
+  background: #00d564;
+}
+
+.sc-toon {
+  padding: 20px 0;
+}
+.sc-toon .group-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 10px;
+}
+.sc-toon .group-head .select-area {
+  position: relative;
+  font-size: 12px;
+}
+.sc-toon .group-head .select-area::after {
+  content: "▼";
+  position: absolute;
+  font-size: 5px;
+  top: 0px;
+  right: -15px;
+}
+.sc-toon .group-head .select-area .select-sort {
+  position: absolute;
+  top: 0px;
+  font-size: 12px;
+  border: 0;
+  background: none;
+  line-height: 13px;
+  opacity: 0;
+}
+.sc-toon .group-head .btn-interest {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #999;
+}
+.sc-toon .group-head .btn-interest::before {
+  background-position: -255px -271px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+.sc-toon .group-inner {
+  padding: 0 15px;
+}
+.sc-toon .group-inner .toon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sc-toon .group-inner .toon-list .toon-item {
+  width: 33.3%;
+  margin-bottom: 5px;
+}
+.sc-toon .group-inner .toon-list .toon-item .link {
+  display: block;
+}
+.sc-toon .group-inner .toon-list .toon-item .link .thumb {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.sc-toon .group-inner .toon-list .toon-item .link .thumb img {
+  background: rgb(250, 237, 161);
+  width: 150px;
+  height: 150px;
+}
+.sc-toon .group-inner .toon-list .toon-item .link .info {
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.sc-toon .group-inner .toon-list .toon-item .link .info .title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+.sc-toon .group-inner .toon-list .toon-item .link .info .author {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+  display: block;
+}
+.sc-toon .group-inner .toon-list .toon-item .link .info .desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+}
+.sc-toon .group-inner .toon-list .toon-item .link .info .detail {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+  line-height: 12px;
+  color: #ff3a46;
+}
+.sc-toon .line {
+  height: 10px;
+  background: #eee;
+  margin-bottom: 160px;
+}
+.sc-toon .page-box {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.sc-toon .page-box .curr-page {
+  display: inline-block;
+  padding: 0 30px;
+  color: #000;
+}
+.sc-toon .page-box .curr-page .total-page {
+  color: #999;
+}
+.sc-toon .page-box .link-prev, .sc-toon .page-box .link-next {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  width: 26px;
+  height: 20px;
+  border: 1px solid #eee;
+}
+.sc-toon .page-box .link-prev::before {
+  content: "";
+  background-position: -298px 0;
+  width: 18px;
+  height: 18px;
+}
+.sc-toon .page-box .link-next::before {
+  content: "";
+  background-position: -298px -40px;
+  width: 18px;
+  height: 18px;
+}
+
+.sc-todaybest {
+  padding: 20px 0 0;
+}
+.sc-todaybest .group-inner {
+  padding: 10px 15px 0;
+}
+.sc-todaybest .group-inner .toon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sc-todaybest .group-inner .toon-list .toon-item {
+  width: 33%;
+}
+.sc-todaybest .group-inner .toon-list .toon-item .link {
+  display: block;
+}
+.sc-todaybest .group-inner .toon-list .toon-item .link .thumb {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.sc-todaybest .group-inner .toon-list .toon-item .link .info {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.sc-todaybest .group-inner .toon-list .toon-item .link .info .title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+.sc-todaybest .group-inner .toon-list .toon-item .link .info .author {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+}
+
+.sublnb-area {
+  position: relative;
+  text-align: center;
+  padding: 8px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  background: #f8f8f9;
+}
+.sublnb-area .sublnb-list {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+.sublnb-area .sublnb-list .sublnb-item {
+  margin-left: 15px;
+}
+.sublnb-area .sublnb-list .sublnb-item a {
+  display: inline-block;
+  height: 25px;
+  padding: 0 7px;
+  margin: 2px 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  white-space: nowrap;
+}
+.sublnb-area .sublnb-list .sublnb-item.active {
+  border-radius: 35%;
+  color: #fff;
+  background: #00d564;
+}
+
+.sc-typetoon {
+  padding: 20px 0;
+}
+.sc-typetoon .group-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 10px;
+}
+.sc-typetoon .group-head .select-area {
+  display: flex;
+  font-size: 13px;
+  font-weight: 400;
+}
+.sc-typetoon .group-head .select-area .btn-select {
+  position: relative;
+  color: #999;
+}
+.sc-typetoon .group-head .select-area .btn-select + .btn-select::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #eee;
+  margin: 0 8px;
+}
+.sc-typetoon .group-head .select-area .btn-select.active {
+  color: #000;
+}
+.sc-typetoon .group-head .btn-interest {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #999;
+}
+.sc-typetoon .group-head .btn-interest::before {
+  background-position: -255px -271px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+.sc-typetoon .group-inner2 {
+  padding: 0 15px;
+}
+.sc-typetoon .group-inner2 .toon-list {
+  display: flex;
+  flex-direction: column;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link {
+  display: block;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link .thumb {
+  float: left;
+  width: 110px;
+  height: 90px;
+  margin-right: 10px;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link .info {
+  overflow: hidden;
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link .info .title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link .info .author {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+  display: block;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link .info .desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 13px;
+  color: #999;
+  line-height: 25px;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link .info .detail {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+  line-height: 12px;
+  color: #999;
+}
+.sc-typetoon .group-inner2 .toon-list .toon-item .link .info .detail .score {
+  color: #ff3a46;
+  margin-right: 5px;
+}
+.sc-typetoon .line {
+  height: 10px;
+  background: #eee;
+  margin-bottom: 160px;
+}
+.sc-typetoon .page-box {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.sc-typetoon .page-box .curr-page {
+  display: inline-block;
+  padding: 0 30px;
+  color: #000;
+}
+.sc-typetoon .page-box .curr-page .total-page {
+  color: #999;
+}
+.sc-typetoon .page-box .link-prev, .sc-typetoon .page-box .link-next {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  width: 26px;
+  height: 20px;
+  border: 1px solid #eee;
+}
+.sc-typetoon .page-box .link-prev::before {
+  content: "";
+  background-position: -298px 0;
+  width: 18px;
+  height: 18px;
+}
+.sc-typetoon .page-box .link-next::before {
+  content: "";
+  background-position: -298px -40px;
+  width: 18px;
+  height: 18px;
 }

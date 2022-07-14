@@ -133,13 +133,26 @@ $(function(){
   
     });
 
+    var swiper = new Swiper(".sc-common2 .swiper", {
+      slidesPerView: 1, // 슬라이드에 보여지는 개수
+      spaceBetween: 50, // 슬라이드 사이 간격
+      loop: true,
+      pagination: {
+        el: ".curr-page .curr",
+        type: "custom",
+        renderCustom: function(swiper, current, total){
+          return `${current} / ${total}`
+        }
+      },
+  
+    });
 
 
 
   // More Button
     
   $('.btn-info').click(function(){
-      $('.info-hideArea').slideToggle();
+      $('.hide-box').slideToggle();
 
       if($(this).hasClass('active')){
           $(this).removeClass('active')

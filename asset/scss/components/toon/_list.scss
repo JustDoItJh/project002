@@ -28,7 +28,12 @@
         height: 12px;
         background-position: -30px -75px;
     }
-
+    .ic-star {
+        @extend .sp-bg;
+        display: inline-block;
+        background-position: -318px -70px;
+        width: 12px; height: 12px;
+    }
     // 개별
     &.row-small{
         display: flex;

@@ -1,0 +1,224 @@
+// --------------------요일별 이달의 신작-----------------------
+.sc-todaybest {
+    padding: 20px 0 0;
+
+    .group-inner {
+        padding: 10px 15px 0;
+
+        .toon-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .toon-item {
+                width: 33%;
+                .link {
+                    display: block;
+
+                    .thumb {
+                        overflow: hidden;
+                        width: 100%; height: 100%;
+                    }
+                    .info {
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                        .title {
+                            @include ellipsis;
+                            font-size: 14px;
+                            display: block;
+                            text-align: left;
+                        }
+                        .author {
+                            @include ellipsis;
+                            font-size: 12px;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 장르선택
+.sublnb-area {
+    position: relative;
+    text-align: center;
+    padding: 8px 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background: #f8f8f9;
+
+    .sublnb-list {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        @extend .hide-scroll;
+
+        .sublnb-item {
+            margin-left: 15px;
+            a{
+                display: inline-block;
+                height: 25px;
+                padding: 0 7px;
+                margin: 2px 0;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 25px;
+                white-space: nowrap;
+            }
+            &.active {
+                border-radius: 35%;
+                color: #fff;
+                background: #00d564;
+            }
+            
+        }
+    }
+}
+
+
+// 웹툰 리스트 
+.sc-typetoon {
+    padding: 20px 0;
+
+    .group-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px 10px;
+
+        .select-area {
+            display: flex;
+            font-size: 13px;
+            font-weight: 400;
+            
+            .btn-select {
+                position: relative;
+                color: #999;
+                
+                &+.btn-select::before {
+                    content: "";
+                    display: inline-block;
+                    width: 1px; height: 10px;
+                    background: #eee;
+                    margin: 0 8px;
+                }
+                &.active {
+                    color: #000;
+                }
+            }
+        }
+        .btn-interest {
+            position: relative;
+            margin-bottom: 5px;
+            font-size: 13px;
+            color: #999;
+
+            &::before {
+                @extend .sp-bg;
+                background-position: -255px -271px;
+                width: 14px;
+                height: 14px;
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: -20px;
+            }
+        }
+    }
+
+    .group-inner2 {
+        padding: 0 15px;
+
+        .toon-list {
+            display: flex;
+            flex-direction: column;
+            .toon-item {
+                padding: 5px 0;
+                border-bottom: 1px solid #eee;
+                .link {
+                    display: block;
+                    .thumb {
+                        float: left;
+                        width: 110px; height: 90px;
+                        margin-right: 10px;
+                    }
+                    .info {
+                        overflow: hidden;
+                        text-align: left;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                        .title {
+                            @include ellipsis;
+                            font-size: 14px;
+                            display: block;
+                            text-align: left;
+                        }
+                        .author {
+                            @include ellipsis;
+                            font-size: 12px;
+                            color: #999;
+                            display: block;
+                        }
+                        .desc {
+                            @include ellipsis;
+                            font-size: 13px;
+                            color: #999;
+                            line-height: 25px;
+                        }
+                        .detail {
+                            display: block;
+                            font-size: 12px;
+                            margin-top: 4px;
+                            line-height: 12px;
+                            color: #999;
+                            .score {
+                                color: #ff3a46;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .line {
+        height: 10px;
+        background: #eee;
+        margin-bottom: 160px;
+    }
+
+    .page-box {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 12px;
+        .curr-page {
+            display: inline-block;
+            padding: 0 30px;
+            color: #000;
+            .total-page { color: #999;}
+        }
+        .link-prev, .link-next {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            width: 26px; height: 20px;
+            border: 1px solid #eee;
+        }
+        .link-prev::before {
+            @extend .sp-bg;
+            content: "";
+            background-position: -298px 0;
+            width: 18px;
+            height: 18px;
+        }
+        .link-next::before {
+            @extend .sp-bg;
+            content: "";
+            background-position: -298px -40px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
