@@ -604,6 +604,12 @@ body {
   color: #000;
 }
 
+.scroll-area .toon-list {
+  display: flex;
+}
+.scroll-area .toon-list .toon-item {
+  margin-right: 5px;
+}
 .toon-list .link-toon {
   display: block;
 }

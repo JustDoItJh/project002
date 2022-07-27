@@ -2,19 +2,21 @@ $(function(){
 
 
   
-  fetch('../asset/data/toon.json')
+  fetch('../asset/data/home.json')
   .then((response)  => response.json())
   .then((json) => {
     upHtml = `<span class="ic-up"><span class="blind">up</span></span>`;
-    startHtml = `<span class="ic-star"><span class="blind">별점</span></span>`;
+    starHtml = `<span class="ic-star"><span class="blind">별점</span></span>`;
 
     const recent = json.recent;
     const top10 = json.top10;
     const age = json.age;
     
+    
     let recenthtml = '';
     let top10html = '';
     let agehtml = '';
+    
 
     recent.forEach(element => {
       
@@ -85,6 +87,7 @@ $(function(){
                   </li>`;
     });
 
+    
     
 
     document.querySelector('.sc-latest .toon-list').innerHTML = recenthtml;

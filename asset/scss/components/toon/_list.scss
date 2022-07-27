@@ -1,5 +1,12 @@
 .toon-list{
-    .toon-item{}
+    .scroll-area & {
+        display: flex;
+    }
+    .toon-item {
+        .scroll-area & {
+            margin-right: 5px;
+        }
+    }
     .link-toon{display: block;}
     .thumb {
         overflow: hidden;

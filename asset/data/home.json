@@ -3,14 +3,14 @@
 
     "recent":[
         {
-            "link":"타겟링크",
+            "link":"#",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
             "isUp": true
 
         },
         {
-            "link":"타겟링크",
+            "link":"#",
             "imgSrc":"./asset/images/age2.jpg",
             "infoTitle":"참교육",
             "isUp": false
@@ -20,7 +20,7 @@
 
     "top10":[
         {   
-            "rank":"1",
+            "rank":1,
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
@@ -29,7 +29,7 @@
 
         },
         {   
-            "rank":"2",
+            "rank":2,
             "link":"타겟링크",
             "imgSrc":"./asset/images/age2.jpg",
             "infoTitle":"참교육",
@@ -41,7 +41,7 @@
 
     "age":[
         {
-            "rank":"1",
+            "rank":1,
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
@@ -49,7 +49,7 @@
             "isUp": true
         },
         {
-            "rank":"2",
+            "rank":2,
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
@@ -57,7 +57,7 @@
             "isUp": true
         },
         {
-            "rank":"3",
+            "rank":3,
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
@@ -65,7 +65,7 @@
             "isUp": true
         },
         {
-            "rank":"4",
+            "rank":4,
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
@@ -73,7 +73,7 @@
             "isUp": true
         },
         {
-            "rank":"5",
+            "rank":5,
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
@@ -81,7 +81,7 @@
             "isUp": true
         },
         {
-            "rank":"6",
+            "rank":6,
             "link":"타겟링크",
             "imgSrc":"./asset/images/top10.jpg",
             "infoTitle":"뷰티풀 군바리",
@@ -89,6 +89,25 @@
             "isUp": true
         }
 
+    ],
+
+
+
+    "recommend":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend1.jpg",
+            "infoTitle":"투신전생기",
+            "infoAuthor":"청담",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend2.jpg",
+            "infoTitle":"마법사가 죽음을 맞이하는 방법",
+            "infoAuthor":"박젶 / 주은설",
+            "isUp":false
+        }
     ]
 
 
