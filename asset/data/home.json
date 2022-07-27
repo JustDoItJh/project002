@@ -4,21 +4,38 @@
     "recent":[
         {
             "link":"#",
-            "imgSrc":"./asset/images/top10.jpg",
-            "infoTitle":"뷰티풀 군바리",
+            "imgSrc":"./asset/images/latest.jpg",
+            "infoTitle":"외모지상주의",
             "isUp": true
 
         },
         {
             "link":"#",
-            "imgSrc":"./asset/images/age2.jpg",
-            "infoTitle":"참교육",
+            "imgSrc":"./asset/images/latest1.jpg",
+            "infoTitle":"여신강림",
+            "isUp": true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/latest2.jpg",
+            "infoTitle":"두 번 사는 프로듀서",
+            "isUp": true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/latest3.jpg",
+            "infoTitle":"무용과 남학생",
             "isUp": false
-
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/latest4.jpg",
+            "infoTitle":"66666년 만에 환생한 흑마법사",
+            "isUp": false
         }
     ],
 
-    "top10":[
+    "webtoon":[
         {   
             "rank":1,
             "link":"타겟링크",
@@ -26,7 +43,49 @@
             "infoTitle":"뷰티풀 군바리",
             "infoRound":"336화_단합 (4)",
             "isUp": true
+        },
+        {   
+            "rank":2,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {   
+            "rank":3,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {   
+            "rank":4,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {   
+            "rank":5,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/top10.jpg",
+            "infoTitle":"뷰티풀 군바리",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        }
+    ],
 
+    "best":[
+        {   
+            "rank":1,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age2.jpg",
+            "infoTitle":"참교육",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
         },
         {   
             "rank":2,
@@ -35,7 +94,30 @@
             "infoTitle":"참교육",
             "infoRound":"336화_단합 (4)",
             "isUp": true
-
+        },
+        {   
+            "rank":3,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age2.jpg",
+            "infoTitle":"참교육",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {   
+            "rank":4,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age2.jpg",
+            "infoTitle":"참교육",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
+        },
+        {   
+            "rank":5,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age2.jpg",
+            "infoTitle":"참교육",
+            "infoRound":"336화_단합 (4)",
+            "isUp": true
         }
     ],
 
@@ -93,12 +175,71 @@
 
 
 
-    "recommend":[
+    "recommend1":[
         {
             "link":"#",
             "imgSrc":"./asset/images/recommend1.jpg",
             "infoTitle":"투신전생기",
             "infoAuthor":"청담",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend1.jpg",
+            "infoTitle":"투신전생기",
+            "infoAuthor":"청담",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend1.jpg",
+            "infoTitle":"투신전생기",
+            "infoAuthor":"청담",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend1.jpg",
+            "infoTitle":"투신전생기",
+            "infoAuthor":"청담",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend1.jpg",
+            "infoTitle":"투신전생기",
+            "infoAuthor":"청담",
+            "isUp":false
+        }
+    ],
+
+    "recommend2":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend2.jpg",
+            "infoTitle":"마법사가 죽음을 맞이하는 방법",
+            "infoAuthor":"박젶 / 주은설",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend2.jpg",
+            "infoTitle":"마법사가 죽음을 맞이하는 방법",
+            "infoAuthor":"박젶 / 주은설",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend2.jpg",
+            "infoTitle":"마법사가 죽음을 맞이하는 방법",
+            "infoAuthor":"박젶 / 주은설",
+            "isUp":false
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/recommend2.jpg",
+            "infoTitle":"마법사가 죽음을 맞이하는 방법",
+            "infoAuthor":"박젶 / 주은설",
             "isUp":false
         },
         {

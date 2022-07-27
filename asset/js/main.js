@@ -9,13 +9,20 @@ $(function(){
     starHtml = `<span class="ic-star"><span class="blind">별점</span></span>`;
 
     const recent = json.recent;
-    const top10 = json.top10;
+    const webtoon = json.webtoon;
+    const best = json.best;
     const age = json.age;
+    const recommend1 = json.recommend1;
+    const recommend2 = json.recommend2;
+    
     
     
     let recenthtml = '';
-    let top10html = '';
+    let webtoonhtml = '';
+    let besthtml = '';
     let agehtml = '';
+    let recommend1html = '';
+    let recommend2html = '';
     
 
     recent.forEach(element => {
@@ -40,11 +47,35 @@ $(function(){
     });
 
 
-    top10.forEach(element => {
+    webtoon.forEach(element => {
       
       isUp = (element.isUp) ? upHtml : null;
 
-      top10html += `<li class="toon-item">
+      webtoonhtml += `<li class="toon-item">
+                        <a href="${element.link}" class="link-toon">
+                            <div class="thumb">
+                                <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                            </div>
+                            <div class="info">
+                                <em class="rank">${element.rank}</em>
+                                <div class="text-box">
+                                    <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                        ${isUp}
+                                    </p>
+                                    <span class="text-sub">${element.infoRound}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>`;
+    });
+
+
+    best.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      besthtml += `<li class="toon-item">
                         <a href="${element.link}" class="link-toon">
                             <div class="thumb">
                                 <img src="${element.imgSrc}" alt="${element.infoTitle}">
@@ -87,12 +118,59 @@ $(function(){
                   </li>`;
     });
 
+
+    recommend1.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      recommend1html += `<li class="toon-item">
+                            <a href="${element.link}" class="link-toon">
+                                <div class="thumb">
+                                    <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                                </div>
+                                <div class="info">
+                                    <div class="text-box">
+                                        <p class="text-main">
+                                            <strong class="title">${element.infoTitle}</strong>
+                                        </p>
+                                        <span class="author">${element.infoAuthor}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>`;
+    });
+
+
+    recommend2.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      recommend2html += `<li class="toon-item">
+                            <a href="${element.link}" class="link-toon">
+                                <div class="thumb">
+                                    <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                                </div>
+                                <div class="info">
+                                    <div class="text-box">
+                                        <p class="text-main">
+                                            <strong class="title">${element.infoTitle}</strong>
+                                        </p>
+                                        <span class="author">${element.infoAuthor}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>`;
+    });
+
     
     
 
     document.querySelector('.sc-latest .toon-list').innerHTML = recenthtml;
-    document.querySelector('.sc-top10 .toon-list').innerHTML = top10html;
+    document.querySelector('.webtoon .toon-list').innerHTML = webtoonhtml;
+    document.querySelector('.best .toon-list').innerHTML = besthtml;
     document.querySelector('.sc-age .toon-list').innerHTML = agehtml;
+    document.querySelector('.recommend1 .toon-list').innerHTML = recommend1html;
+    document.querySelector('.recommend2 .toon-list').innerHTML = recommend2html;
     
 
   })
@@ -130,7 +208,7 @@ $(function(){
       idx = $(this).index();
       $(this).addClass('active').siblings().removeClass('active');
       ageSlide.slideToLoop(idx)
-    })
+    });
 
 
 
@@ -138,16 +216,16 @@ $(function(){
     // -------------------------실시간 랭킹 top10 Swipepr--------------------------
 
     const topSlide = new Swiper(".sc-top10 .swiper", {
-      slidesPerView: 1.1, // 슬라이드에 보여지는 개수
-      spaceBetween: 16, // 슬라이드 사이 간격
+      slidesPerView: 1, // 슬라이드에 보여지는 개수
+      spaceBetween: 10, // 슬라이드 사이 간격
       loop: true,
     });
 
     $('.sc-top10 .btn-sort').click(function(){
       idx2 = $(this).index();
       $(this).addClass('active').siblings().removeClass('active');
-      topSlide.slideToLoop(idx2)
-    })
+      topSlide.slideToLoop(idx2 - 2);
+    });
   
 
     var swiper = new Swiper(".sc-common .swiper", {

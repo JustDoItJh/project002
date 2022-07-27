@@ -1,4 +1,14 @@
 .toon-list{
+    .latest & {
+        .title {
+            @include ellipsis;
+            width: 74px;
+            font-size: 12px;
+            text-align: left;
+            display: block;
+            padding-top: 5px;
+        }
+    }
     .scroll-area & {
         display: flex;
     }
@@ -21,12 +31,7 @@
     .info{
         .text-box{}
         .text-main{}
-        .title {
-            display: block;
-            text-align: center;
-            font-size: 12px;
-            padding-top: 5px;
-        }
+        .title {}
     }
     .ic-up{
         @extend .sp-bg2;
@@ -57,6 +62,7 @@
                 top: 4px;left: 4px;
             }
         }
+
     }
     &.row-medium{}
     &.col-small{
