@@ -11,6 +11,7 @@
     }
     .scroll-area & {
         display: flex;
+        overflow-x: auto;
     }
     .toon-item {
         .scroll-area & {
@@ -64,7 +65,11 @@
         }
 
     }
-    &.row-medium{}
+    &.row-medium{
+        display: flex;
+        overflow-x: auto;
+        @extend .hide-scroll;
+    }
     &.col-small{
         margin-top: 12px;
         .toon-item{

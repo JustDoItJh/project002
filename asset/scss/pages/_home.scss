@@ -114,7 +114,7 @@
         display: flex;
         justify-content: space-around;
         padding: 5px 0;
-
+        width: 487px;
         .btn-sort {
             font-size: 14px;
             font-weight: 600;
@@ -134,11 +134,8 @@
     padding: 40px 0 20px;
 
     .scroll-area {
-        overflow: hidden;
-        width: 100%;
         padding: 12px 0 0 15px;
         box-sizing: border-box;
-
         .link-toon {
             display: block;
             .thumb {

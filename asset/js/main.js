@@ -11,7 +11,12 @@ $(function(){
     const recent = json.recent;
     const webtoon = json.webtoon;
     const best = json.best;
-    const age = json.age;
+    const age10f = json.age10f;
+    const age10m = json.age10m;
+    const age20f = json.age20f;
+    const age20m = json.age20m;
+    const age30f = json.age30f;
+    const age30m = json.age30m;
     const recommend1 = json.recommend1;
     const recommend2 = json.recommend2;
     
@@ -20,7 +25,12 @@ $(function(){
     let recenthtml = '';
     let webtoonhtml = '';
     let besthtml = '';
-    let agehtml = '';
+    let age10fhtml = '';
+    let age10mhtml = '';
+    let age20fhtml = '';
+    let age20mhtml = '';
+    let age30fhtml = '';
+    let age30mhtml = '';
     let recommend1html = '';
     let recommend2html = '';
     
@@ -95,11 +105,11 @@ $(function(){
     });
     
 
-    age.forEach(element => {
+    age10f.forEach(element => {
       
       isUp = (element.isUp) ? upHtml : null;
 
-      agehtml += `<li class="toon-item">
+      age10fhtml += `<li class="toon-item">
                       <a href="${element.link}" class="link-toon">
                           <div class="thumb">
                               <img src="${element.imgSrc}" alt="${element.infoTitle}">
@@ -109,9 +119,118 @@ $(function(){
                               <div class="text-box">
                                   <p class="text-main">
                                         <strong class="title">${element.infoTitle}</strong>
-                                        ${isUp}
                                   </p>
-                                  <span class="text-sub">${element.infoRound}</span>
+                                  <span class="text-sub">${element.infoAuthor}</span>
+                              </div>
+                          </div>
+                      </a>
+                  </li>`;
+    });
+
+    age10m.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      age10mhtml += `<li class="toon-item">
+                      <a href="${element.link}" class="link-toon">
+                          <div class="thumb">
+                              <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                          </div>
+                          <div class="info">
+                              <em class="rank">${element.rank}</em>
+                              <div class="text-box">
+                                  <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                  </p>
+                                  <span class="text-sub">${element.infoAuthor}</span>
+                              </div>
+                          </div>
+                      </a>
+                  </li>`;
+    });
+
+    age20f.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      age20fhtml += `<li class="toon-item">
+                      <a href="${element.link}" class="link-toon">
+                          <div class="thumb">
+                              <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                          </div>
+                          <div class="info">
+                              <em class="rank">${element.rank}</em>
+                              <div class="text-box">
+                                  <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                  </p>
+                                  <span class="text-sub">${element.infoAuthor}</span>
+                              </div>
+                          </div>
+                      </a>
+                  </li>`;
+    });
+
+    age20m.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      age20mhtml += `<li class="toon-item">
+                      <a href="${element.link}" class="link-toon">
+                          <div class="thumb">
+                              <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                          </div>
+                          <div class="info">
+                              <em class="rank">${element.rank}</em>
+                              <div class="text-box">
+                                  <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                  </p>
+                                  <span class="text-sub">${element.infoAuthor}</span>
+                              </div>
+                          </div>
+                      </a>
+                  </li>`;
+    });
+
+    age30f.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      age30fhtml += `<li class="toon-item">
+                      <a href="${element.link}" class="link-toon">
+                          <div class="thumb">
+                              <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                          </div>
+                          <div class="info">
+                              <em class="rank">${element.rank}</em>
+                              <div class="text-box">
+                                  <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                  </p>
+                                  <span class="text-sub">${element.infoAuthor}</span>
+                              </div>
+                          </div>
+                      </a>
+                  </li>`;
+    });
+
+    age30m.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      age30mhtml += `<li class="toon-item">
+                      <a href="${element.link}" class="link-toon">
+                          <div class="thumb">
+                              <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                          </div>
+                          <div class="info">
+                              <em class="rank">${element.rank}</em>
+                              <div class="text-box">
+                                  <p class="text-main">
+                                        <strong class="title">${element.infoTitle}</strong>
+                                  </p>
+                                  <span class="text-sub">${element.infoAuthor}</span>
                               </div>
                           </div>
                       </a>
@@ -168,7 +287,12 @@ $(function(){
     document.querySelector('.sc-latest .toon-list').innerHTML = recenthtml;
     document.querySelector('.webtoon .toon-list').innerHTML = webtoonhtml;
     document.querySelector('.best .toon-list').innerHTML = besthtml;
-    document.querySelector('.sc-age .toon-list').innerHTML = agehtml;
+    document.querySelector('.age-10f .toon-list').innerHTML = age10fhtml;
+    document.querySelector('.age-10m .toon-list').innerHTML = age10mhtml;
+    document.querySelector('.age-20f .toon-list').innerHTML = age20fhtml;
+    document.querySelector('.age-20m .toon-list').innerHTML = age20mhtml;
+    document.querySelector('.age-30f .toon-list').innerHTML = age30fhtml;
+    document.querySelector('.age-30m .toon-list').innerHTML = age30mhtml;
     document.querySelector('.recommend1 .toon-list').innerHTML = recommend1html;
     document.querySelector('.recommend2 .toon-list').innerHTML = recommend2html;
     

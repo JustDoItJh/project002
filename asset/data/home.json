@@ -82,7 +82,7 @@
         {   
             "rank":1,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/age2.jpg",
+            "imgSrc":"./asset/images/top10_b.jpg",
             "infoTitle":"참교육",
             "infoRound":"336화_단합 (4)",
             "isUp": true
@@ -90,7 +90,7 @@
         {   
             "rank":2,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/age2.jpg",
+            "imgSrc":"./asset/images/top10_b.jpg",
             "infoTitle":"참교육",
             "infoRound":"336화_단합 (4)",
             "isUp": true
@@ -98,7 +98,7 @@
         {   
             "rank":3,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/age2.jpg",
+            "imgSrc":"./asset/images/top10_b.jpg",
             "infoTitle":"참교육",
             "infoRound":"336화_단합 (4)",
             "isUp": true
@@ -106,7 +106,7 @@
         {   
             "rank":4,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/age2.jpg",
+            "imgSrc":"./asset/images/top10_b.jpg",
             "infoTitle":"참교육",
             "infoRound":"336화_단합 (4)",
             "isUp": true
@@ -114,65 +114,236 @@
         {   
             "rank":5,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/age2.jpg",
+            "imgSrc":"./asset/images/top10_b.jpg",
             "infoTitle":"참교육",
             "infoRound":"336화_단합 (4)",
             "isUp": true
         }
     ],
 
-    "age":[
+    
+    "age10f":[
         {
             "rank":1,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/top10.jpg",
-            "infoTitle":"뷰티풀 군바리",
-            "infoRound":"336화_단합 (4)",
-            "isUp": true
+            "imgSrc":"./asset/images/age10f.jpg",
+            "infoTitle":"오로지 너를 이기고 싶어",
+            "infoAuthor":"아마도지 / 사삭"
         },
         {
             "rank":2,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/top10.jpg",
-            "infoTitle":"뷰티풀 군바리",
-            "infoRound":"336화_단합 (4)",
-            "isUp": true
+            "imgSrc":"./asset/images/age10f.jpg",
+            "infoTitle":"오로지 너를 이기고 싶어",
+            "infoAuthor":"아마도지 / 사삭"
         },
         {
             "rank":3,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/top10.jpg",
-            "infoTitle":"뷰티풀 군바리",
-            "infoRound":"336화_단합 (4)",
-            "isUp": true
+            "imgSrc":"./asset/images/age10f.jpg",
+            "infoTitle":"오로지 너를 이기고 싶어",
+            "infoAuthor":"아마도지 / 사삭"
         },
         {
             "rank":4,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/top10.jpg",
-            "infoTitle":"뷰티풀 군바리",
-            "infoRound":"336화_단합 (4)",
-            "isUp": true
+            "imgSrc":"./asset/images/age10f.jpg",
+            "infoTitle":"오로지 너를 이기고 싶어",
+            "infoAuthor":"아마도지 / 사삭"
         },
         {
             "rank":5,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/top10.jpg",
-            "infoTitle":"뷰티풀 군바리",
-            "infoRound":"336화_단합 (4)",
-            "isUp": true
+            "imgSrc":"./asset/images/age10f.jpg",
+            "infoTitle":"오로지 너를 이기고 싶어",
+            "infoAuthor":"아마도지 / 사삭"
+        }
+    ],
+    "age10m":[
+        {
+            "rank":1,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age10m.jpg",
+            "infoTitle":"입학용병",
+            "infoAuthor":"YC / 락현"
         },
         {
-            "rank":6,
+            "rank":2,
             "link":"타겟링크",
-            "imgSrc":"./asset/images/top10.jpg",
-            "infoTitle":"뷰티풀 군바리",
-            "infoRound":"336화_단합 (4)",
-            "isUp": true
+            "imgSrc":"./asset/images/age10m.jpg",
+            "infoTitle":"입학용병",
+            "infoAuthor":"YC / 락현"
+        },
+        {
+            "rank":3,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age10m.jpg",
+            "infoTitle":"입학용병",
+            "infoAuthor":"YC / 락현"
+        },
+        {
+            "rank":4,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age10m.jpg",
+            "infoTitle":"입학용병",
+            "infoAuthor":"YC / 락현"
+        },
+        {
+            "rank":5,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age10m.jpg",
+            "infoTitle":"입학용병",
+            "infoAuthor":"YC / 락현"
         }
-
     ],
-
+    "age20f":[
+        {
+            "rank":1,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20f.jpg",
+            "infoTitle":"이번 생도 잘 부탁해",
+            "infoAuthor":"이혜"
+        },
+        {
+            "rank":2,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20f.jpg",
+            "infoTitle":"이번 생도 잘 부탁해",
+            "infoAuthor":"이혜"
+        },
+        {
+            "rank":3,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20f.jpg",
+            "infoTitle":"이번 생도 잘 부탁해",
+            "infoAuthor":"이혜"
+        },
+        {
+            "rank":4,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20f.jpg",
+            "infoTitle":"이번 생도 잘 부탁해",
+            "infoAuthor":"이혜"
+        },
+        {
+            "rank":5,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20f.jpg",
+            "infoTitle":"이번 생도 잘 부탁해",
+            "infoAuthor":"이혜"
+        }
+    ],
+    "age20m":[
+        {
+            "rank":1,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20m.jpg",
+            "infoTitle":"약한영웅",
+            "infoAuthor":"서패스 / 김진석"
+        },
+        {
+            "rank":2,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20m.jpg",
+            "infoTitle":"약한영웅",
+            "infoAuthor":"서패스 / 김진석"
+        },
+        {
+            "rank":3,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20m.jpg",
+            "infoTitle":"약한영웅",
+            "infoAuthor":"서패스 / 김진석"
+        },
+        {
+            "rank":4,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20m.jpg",
+            "infoTitle":"약한영웅",
+            "infoAuthor":"서패스 / 김진석"
+        },
+        {
+            "rank":5,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age20m.jpg",
+            "infoTitle":"약한영웅",
+            "infoAuthor":"서패스 / 김진석"
+        }
+    ],
+    "age30f":[
+        {
+            "rank":1,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30f.jpg",
+            "infoTitle":"동생친구",
+            "infoAuthor":"님니"
+        },
+        {
+            "rank":2,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30f.jpg",
+            "infoTitle":"동생친구",
+            "infoAuthor":"님니"
+        },
+        {
+            "rank":3,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30f.jpg",
+            "infoTitle":"동생친구",
+            "infoAuthor":"님니"
+        },
+        {
+            "rank":4,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30f.jpg",
+            "infoTitle":"동생친구",
+            "infoAuthor":"님니"
+        },
+        {
+            "rank":5,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30f.jpg",
+            "infoTitle":"동생친구",
+            "infoAuthor":"님니"
+        }
+    ],
+    "age30m":[
+        {
+            "rank":1,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30m.jpg",
+            "infoTitle":"별이삼샵",
+            "infoAuthor":"혀노"
+        },
+        {
+            "rank":2,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30m.jpg",
+            "infoTitle":"별이삼샵",
+            "infoAuthor":"혀노"
+        },
+        {
+            "rank":3,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30m.jpg",
+            "infoTitle":"별이삼샵",
+            "infoAuthor":"혀노"
+        },
+        {
+            "rank":4,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30m.jpg",
+            "infoTitle":"별이삼샵",
+            "infoAuthor":"혀노"
+        },
+        {
+            "rank":5,
+            "link":"타겟링크",
+            "imgSrc":"./asset/images/age30m.jpg",
+            "infoTitle":"별이삼샵",
+            "infoAuthor":"혀노"
+        }
+    ],
 
 
     "recommend1":[

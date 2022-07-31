@@ -226,11 +226,11 @@ body {
   vertical-align: top;
 }
 
-.hide-scroll, .sublnb-area .sublnb-list, .toon-list.row-small {
+.hide-scroll, .sublnb-area .sublnb-list, .toon-list.row-medium, .toon-list.row-small {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.hide-scroll .box::-webkit-scrollbar, .sublnb-area .sublnb-list .box::-webkit-scrollbar, .toon-list.row-small .box::-webkit-scrollbar {
+.hide-scroll .box::-webkit-scrollbar, .sublnb-area .sublnb-list .box::-webkit-scrollbar, .toon-list.row-medium .box::-webkit-scrollbar, .toon-list.row-small .box::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
@@ -616,6 +616,7 @@ body {
 }
 .scroll-area .toon-list {
   display: flex;
+  overflow-x: auto;
 }
 .scroll-area .toon-list .toon-item {
   margin-right: 5px;
@@ -662,6 +663,10 @@ body {
   position: absolute;
   top: 4px;
   left: 4px;
+}
+.toon-list.row-medium {
+  display: flex;
+  overflow-x: auto;
 }
 .toon-list.col-small {
   margin-top: 12px;
@@ -835,6 +840,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 5px 0;
+  width: 487px;
 }
 .sc-age .group-sort .btn-sort {
   font-size: 14px;
@@ -853,8 +859,6 @@ body {
   padding: 40px 0 20px;
 }
 .sc-recommend .scroll-area {
-  overflow: hidden;
-  width: 100%;
   padding: 12px 0 0 15px;
   box-sizing: border-box;
 }
