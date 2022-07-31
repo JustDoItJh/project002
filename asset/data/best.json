@@ -1,0 +1,105 @@
+{
+    "todaybest":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best.jpg",
+            "infoTitle":"드림걸즈",
+            "infoAuthor":"thre****"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best.jpg",
+            "infoTitle":"드림걸즈",
+            "infoAuthor":"thre****"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best.jpg",
+            "infoTitle":"드림걸즈",
+            "infoAuthor":"thre****"
+        }
+    ],
+    "typetoon":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/best2.jpg",
+            "infoTitle":"과학고 생존일지",
+            "infoAuthor":"zu****",
+            "infoDesc":"과학고에 간 문과생",
+            "score":9.88,
+            "date":"22.07.13"
+        }
+    ]
+}

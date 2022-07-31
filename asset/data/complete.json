@@ -1,0 +1,126 @@
+{
+    "finishtop":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish1.jpg",
+            "infoTitle":"이두나!",
+            "infoAuthor":"민송아",
+            "infoLike":"관심 50만+",
+            "star":9.73
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish1.jpg",
+            "infoTitle":"이두나!",
+            "infoAuthor":"민송아",
+            "infoLike":"관심 50만+",
+            "star":9.73
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish1.jpg",
+            "infoTitle":"이두나!",
+            "infoAuthor":"민송아",
+            "infoLike":"관심 50만+",
+            "star":9.73
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish2.jpg",
+            "infoTitle":"요리GO",
+            "infoAuthor":"HO9",
+            "infoLike":"관심 10만+",
+            "star":9.94
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish2.jpg",
+            "infoTitle":"요리GO",
+            "infoAuthor":"HO9",
+            "infoLike":"관심 10만+",
+            "star":9.94
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish2.jpg",
+            "infoTitle":"요리GO",
+            "infoAuthor":"HO9",
+            "infoLike":"관심 10만+",
+            "star":9.94
+        }
+    ],
+    "finishbottom":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish3.jpg",
+            "infoTitle":"[드라마원작] 유미의 세포들",
+            "infoAuthor":"이동건",
+            "infoLike":"관심 100만+",
+            "star":9.93
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish3.jpg",
+            "infoTitle":"[드라마원작] 유미의 세포들",
+            "infoAuthor":"이동건",
+            "infoLike":"관심 100만+",
+            "star":9.93
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish3.jpg",
+            "infoTitle":"[드라마원작] 유미의 세포들",
+            "infoAuthor":"이동건",
+            "infoLike":"관심 100만+",
+            "star":9.93
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish4.jpg",
+            "infoTitle":"청춘 블라썸",
+            "infoAuthor":"홍덕 / NEMONE",
+            "infoLike":"관심 50만+",
+            "star":9.97
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish4.jpg",
+            "infoTitle":"청춘 블라썸",
+            "infoAuthor":"홍덕 / NEMONE",
+            "infoLike":"관심 50만+",
+            "star":9.97
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish4.jpg",
+            "infoTitle":"청춘 블라썸",
+            "infoAuthor":"홍덕 / NEMONE",
+            "infoLike":"관심 50만+",
+            "star":9.97
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish5.jpg",
+            "infoTitle":"하루만 네가 되고 싶어",
+            "infoAuthor":"삼",
+            "infoLike":"관심 50만+",
+            "star":9.98
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish5.jpg",
+            "infoTitle":"하루만 네가 되고 싶어",
+            "infoAuthor":"삼",
+            "infoLike":"관심 50만+",
+            "star":9.98
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/finish5.jpg",
+            "infoTitle":"하루만 네가 되고 싶어",
+            "infoAuthor":"삼",
+            "infoLike":"관심 50만+",
+            "star":9.98
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 $(function(){
 
-
+  // -------------------------- 홈 json data -----------------------------
   
   fetch('../asset/data/home.json')
   .then((response)  => response.json())
@@ -301,7 +301,7 @@ $(function(){
   
 
 
-
+  // -------------------------- 요일별 json data -----------------------------
 
   fetch('../asset/data/days.json')
   .then((response)  => response.json())
@@ -362,7 +362,127 @@ $(function(){
     document.querySelector('.bottom .toon-list').innerHTML = daybottomhtml;
 
 
+  })
+
+
+
+
+// -------------------------- 완결작 json data -----------------------------
+
+  fetch('../asset/data/complete.json')
+  .then((response)  => response.json())
+  .then((json) => {
+
+    const finishtop = json.finishtop;
+    const finishbottom = json.finishbottom;
+
+    let finishtophtml = '';
+    let finishbottomhtml = '';
+
+    finishtop.forEach(element => {
+
+      finishtophtml += `<li class="toon-item">
+                        <a href="${element.link}" class="link">
+                            <div class="thumb">
+                                <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                            </div>
+                            <div class="info">
+                                <strong class="title">${element.infoTitle}</strong>
+                                <span class="author">${element.infoAuthor}</span>
+                                <span class="desc">${element.infoLike}</span>
+                                <span class="detail">
+                                  <span class="ic-star"><span class="blind">별점</span></span>
+                                  <span class="score">${element.star}</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>`;
+    });
+
+    finishbottom.forEach(element => {
+
+      finishbottomhtml += `<li class="toon-item">
+                        <a href="${element.link}" class="link">
+                            <div class="thumb">
+                                <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                            </div>
+                            <div class="info">
+                                <strong class="title">${element.infoTitle}</strong>
+                                <span class="author">${element.infoAuthor}</span>
+                                <span class="desc">${element.infoLike}</span>
+                                <span class="detail">
+                                  <span class="ic-star"><span class="blind">별점</span></span>
+                                  <span class="score">${element.star}</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>`;
+    });
+
+    document.querySelector('.top2 .toon-list').innerHTML = finishtophtml;
+    document.querySelector('.bottom2 .toon-list').innerHTML = finishbottomhtml;
+
+
   })  
+
+
+
+
+// -------------------------- 베스트도전 json data -----------------------------
+
+  fetch('../asset/data/best.json')
+  .then((response)  => response.json())
+  .then((json) => {
+
+    const todaybest = json.todaybest;
+    const typetoon = json.typetoon;
+
+    let todaybesthtml = '';
+    let typetoonhtml = '';
+
+    todaybest.forEach(element => {
+
+      todaybesthtml +=  `<li class="toon-item">
+                            <a href="${element.link}" class="link">
+                                <div class="thumb">
+                                    <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                                </div>
+                                <div class="info">
+                                    <strong class="title">${element.infoTitle}</strong>
+                                    <span class="author">${element.infoAuthor}</span>
+                                </div>
+                            </a>
+                        </li>`;
+    });
+
+    typetoon.forEach(element => {
+
+      typetoonhtml += `<li class="toon-item">
+                            <a href="${element.link}" class="link">
+                                <div class="thumb">
+                                    <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                                </div>
+                                <div class="info">
+                                    <strong class="title">${element.infoTitle}</strong>
+                                    <span class="author">${element.infoAuthor}</span>
+                                    <span class="desc">${element.infoDesc}</span>
+                                    <span class="detail">
+                                        <span class="ic-star"><span class="blind">별점</span></span>
+                                        <span class="score">${element.score}</span>
+                                        <span class="date">${element.date}</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>`;
+    });
+
+    document.querySelector('.sc-todaybest .toon-list').innerHTML = todaybesthtml;
+    document.querySelector('.sc-typetoon .toon-list').innerHTML = typetoonhtml;
+
+
+  })  
+
+
 
 
   // --------------------------이달의 신작 Swiper-----------------------------
