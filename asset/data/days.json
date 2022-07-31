@@ -1,0 +1,126 @@
+{
+    "daytop":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days1.jpg",
+            "infoTitle":"아카데미에 위장취업당했다",
+            "infoAuthor":"타나 / WAG / sayren",
+            "infoLike":"관심 5만+",
+            "isUp":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days1.jpg",
+            "infoTitle":"아카데미에 위장취업당했다",
+            "infoAuthor":"타나 / WAG / sayren",
+            "infoLike":"관심 5만+",
+            "isUp":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days1.jpg",
+            "infoTitle":"아카데미에 위장취업당했다",
+            "infoAuthor":"타나 / WAG / sayren",
+            "infoLike":"관심 5만+",
+            "isUp":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days2.jpg",
+            "infoTitle":"곱게 키웠더니, 짐승",
+            "infoAuthor":"티바 / 여슬기 / 이른꽃",
+            "infoLike":"관심 10만+",
+            "isUp":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days2.jpg",
+            "infoTitle":"곱게 키웠더니, 짐승",
+            "infoAuthor":"티바 / 여슬기 / 이른꽃",
+            "infoLike":"관심 10만+",
+            "isUp":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days2.jpg",
+            "infoTitle":"곱게 키웠더니, 짐승",
+            "infoAuthor":"티바 / 여슬기 / 이른꽃",
+            "infoLike":"관심 10만+",
+            "isUp":true
+        }
+    ],
+    "daybottom":[
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days3.jpg",
+            "infoTitle":"키미앤조이",
+            "infoAuthor":"치자",
+            "infoLike":"관심 1천+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days3.jpg",
+            "infoTitle":"키미앤조이",
+            "infoAuthor":"치자",
+            "infoLike":"관심 1천+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days3.jpg",
+            "infoTitle":"키미앤조이",
+            "infoAuthor":"치자",
+            "infoLike":"관심 1천+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days4.jpg",
+            "infoTitle":"독립일기",
+            "infoAuthor":"자까",
+            "infoLike":"관심 50만+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days4.jpg",
+            "infoTitle":"독립일기",
+            "infoAuthor":"자까",
+            "infoLike":"관심 50만+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days4.jpg",
+            "infoTitle":"독립일기",
+            "infoAuthor":"자까",
+            "infoLike":"관심 50만+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days5.jpg",
+            "infoTitle":"2022 스크롤금지",
+            "infoAuthor":"웹툰 작가",
+            "infoLike":"관심 10만+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days5.jpg",
+            "infoTitle":"2022 스크롤금지",
+            "infoAuthor":"웹툰 작가",
+            "infoLike":"관심 10만+",
+            "isNew":true
+        },
+        {
+            "link":"#",
+            "imgSrc":"./asset/images/days5.jpg",
+            "infoTitle":"2022 스크롤금지",
+            "infoAuthor":"웹툰 작가",
+            "infoLike":"관심 10만+",
+            "isNew":true
+        }
+    ]
+}

@@ -303,7 +303,66 @@ $(function(){
 
 
 
+  fetch('../asset/data/days.json')
+  .then((response)  => response.json())
+  .then((json) => {
+    upHtml = `<span class="ic-up"><span class="blind">up</span></span>`;
+    newHtml = `<span class="ic-new"><span class="blind">new</span></span>`;
+    starHtml = `<span class="ic-star"><span class="blind">별점</span></span>`;
 
+    const daytop = json.daytop;
+    const daybottom = json.daybottom;
+
+    let daytophtml = '';
+    let daybottomhtml = '';
+
+    daytop.forEach(element => {
+      
+      isUp = (element.isUp) ? upHtml : null;
+
+      daytophtml += `<li class="toon-item">
+                        <a href="${element.link}" class="link">
+                            <div class="thumb">
+                                <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                            </div>
+                            <div class="info">
+                                <strong class="title">${element.infoTitle}</strong>
+                                <span class="author">${element.infoAuthor}</span>
+                                <span class="desc">${element.infoLike}</span>
+                                <span class="detail">
+                                  ${isUp}
+                                </span>
+                            </div>
+                        </a>
+                    </li>`;
+    });
+
+    daybottom.forEach(element => {
+      
+      isNew = (element.isNew) ? upHtml : null;
+
+      daybottomhtml += `<li class="toon-item">
+                        <a href="${element.link}" class="link">
+                            <div class="thumb">
+                                <img src="${element.imgSrc}" alt="${element.infoTitle}">
+                            </div>
+                            <div class="info">
+                                <strong class="title">${element.infoTitle}</strong>
+                                <span class="author">${element.infoAuthor}</span>
+                                <span class="desc">${element.infoLike}</span>
+                                <span class="detail">
+                                  ${isNew}
+                                </span>
+                            </div>
+                        </a>
+                    </li>`;
+    });
+
+    document.querySelector('.top .toon-list').innerHTML = daytophtml;
+    document.querySelector('.bottom .toon-list').innerHTML = daybottomhtml;
+
+
+  })  
 
 
   // --------------------------이달의 신작 Swiper-----------------------------

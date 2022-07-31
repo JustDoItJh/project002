@@ -218,7 +218,7 @@ body {
   vertical-align: top;
 }
 
-.sp-bg2, .toon-list .ic-up {
+.sp-bg2, .toon-list .ic-new, .toon-list .ic-up {
   background-image: url(../images/sp-bg2.png);
   background-size: 114px 101px;
   background-repeat: no-repeat;
@@ -647,6 +647,12 @@ body {
   width: 12px;
   height: 12px;
 }
+.toon-list .ic-new {
+  display: inline-block;
+  background-position: -78px -75px;
+  width: 18px;
+  height: 12px;
+}
 .toon-list.row-small {
   display: flex;
   overflow-x: auto;
@@ -1013,7 +1019,8 @@ body {
   align-items: center;
 }
 .sc-toon .group-inner .toon-list .toon-item {
-  width: 33.3%;
+  width: 33%;
+  padding-right: 5px;
 }
 .sc-toon .group-inner .toon-list .toon-item .link {
   display: block;
@@ -1022,10 +1029,8 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  border: none;
-}
-.sc-toon .group-inner .toon-list .toon-item .link .thumb img {
-  background: rgb(250, 237, 161);
+  border-radius: 2px;
+  padding-bottom: 5px;
 }
 .sc-toon .group-inner .toon-list .toon-item .link .info {
   text-align: left;
@@ -1226,11 +1231,6 @@ body {
   width: 100%;
   height: 100%;
   border: none;
-}
-.sc-toon .group-inner .toon-list .toon-item .link .thumb img {
-  background: rgb(250, 237, 161);
-  width: 150px;
-  height: 150px;
 }
 .sc-toon .group-inner .toon-list .toon-item .link .info {
   text-align: left;

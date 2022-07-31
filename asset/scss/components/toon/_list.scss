@@ -47,6 +47,13 @@
         background-position: -318px -70px;
         width: 12px; height: 12px;
     }
+    .ic-new {
+        @extend .sp-bg2;
+        display: inline-block;
+        background-position: -78px -75px;
+        width: 18px; height: 12px;
+
+    }
     // 개별
     &.row-small{
         display: flex;
