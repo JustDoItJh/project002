@@ -303,7 +303,7 @@ $(function(){
 
   // -------------------------- 요일별 json data -----------------------------
 
-  fetch('../asset/data/days.json')
+  fetch('https://justdoitjh.github.io/project002/asset/data/days.json')
   .then((response)  => response.json())
   .then((json) => {
     upHtml = `<span class="ic-up"><span class="blind">up</span></span>`;
@@ -357,7 +357,7 @@ $(function(){
                         </a>
                     </li>`;
     });
-
+    console.log(daybottomhtml);
     document.querySelector('.top .toon-list').innerHTML = daytophtml;
     document.querySelector('.bottom .toon-list').innerHTML = daybottomhtml;
 
