@@ -2,7 +2,7 @@ $(function(){
 
   // -------------------------- 홈 json data -----------------------------
   
-  fetch('../asset/data/home.json')
+  fetch('https://justdoitjh.github.io/project002/asset/data/home.json')
   .then((response)  => response.json())
   .then((json) => {
     upHtml = `<span class="ic-up"><span class="blind">up</span></span>`;
@@ -357,7 +357,7 @@ $(function(){
                         </a>
                     </li>`;
     });
-    console.log(daybottomhtml);
+    
     document.querySelector('.top .toon-list').innerHTML = daytophtml;
     document.querySelector('.bottom .toon-list').innerHTML = daybottomhtml;
 
@@ -369,7 +369,7 @@ $(function(){
 
 // -------------------------- 완결작 json data -----------------------------
 
-  fetch('../asset/data/complete.json')
+  fetch('https://justdoitjh.github.io/project002/asset/data/complete.json')
   .then((response)  => response.json())
   .then((json) => {
 
@@ -430,7 +430,7 @@ $(function(){
 
 // -------------------------- 베스트도전 json data -----------------------------
 
-  fetch('../asset/data/best.json')
+  fetch('https://justdoitjh.github.io/project002/asset/data/best.json')
   .then((response)  => response.json())
   .then((json) => {
 
