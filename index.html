@@ -14,8 +14,9 @@
 <body>
     <!-- header -->
     <header class="header">
-
         <div class="group-flex">
+
+            <!-- Gnb Area -->
             <div class="gnb-area">
                 <h1 class="logo"><a href=""><span class="blind">네이버</span></a></h1>
                 <a href="" class="link-nav link-active">웹툰</a>
@@ -23,25 +24,27 @@
                 <a href="" class="link-nav">시리즈</a>
             </div>
             
+            <!-- Util Area -->
             <div class="util-area">
                 <a href="" class="link-search"><span class="blind">검색 페이지로 이동</span></a>
                 <a href="" class="link-my"><span class="blind">MY PAGE로 이동</span></a>
             </div>
         </div>
 
+        <!-- Lnb Area -->
         <div class="lnb-area">
             <ul class="lnb-list">
                 <li class="lnb-item active">
-                    <a href="index.html" class="link"><span class="text">홈</span></a>
+                    <a href="index.html" class="link" role="link"><span class="text">홈</span></a>
                 </li>
                 <li class="lnb-item">
-                    <a href="days.html" class="link"><span class="text">요일별</span></a>
+                    <a href="days.html" class="link" role="link"><span class="text">요일별</span></a>
                 </li>
                 <li class="lnb-item">
-                    <a href="complete.html" class="link"><span class="text">완결작</span></a>
+                    <a href="complete.html" class="link" role="link"><span class="text">완결작</span></a>
                 </li>
                 <li class="lnb-item">
-                    <a href="best.html" class="link"><span class="text">베스트도전</span></a>
+                    <a href="best.html" class="link" role="link"><span class="text">베스트도전</span></a>
                 </li>
             </ul>
         </div>
@@ -52,11 +55,14 @@
 
         <!-- 최근 본 웹툰 Section -->
         <section class="sc-latest">
+
+            <!-- Head-area -->
             <div class="group-title">
                 <h2 class="title">최근 본 웹툰</h2>
                 <a href="" class="link-mark"><span class="blind">동기화 링크</span></a>
                 <a href="" class="link-more"><span class="blind">최근 본 웹툰 목록으로 이동</span>5</a>
             </div>
+            <!-- Webtoon List Area -->
             <div class="latest">
                 <ul class="toon-list row-small">
                     
@@ -73,21 +79,26 @@
 
         <!-- 실시간랭킹 TOP10 Section -->
         <section class="sc-top10">
+            <!-- Head area -->
             <div class="group-title rising">
-                <h2 class="title">실시간랭킹 TOP10</h2>
+                <h2 class="title">실시간랭킹 TOP5</h2>
                 <div class="sort-area">
                     <button class="btn-sort active">웹툰</button>
                     <button class="btn-sort">베스트도전</button>
                 </div>
             </div>
+            <!-- Webtoon List area -->
             <div class="swiper">
                 <div class="swiper-wrapper"> <!-- 랭킹1~5위 페이지 옆으로 넘김 -->
+
+                    <!-- Webtoon list -->
                     <div class="swiper-slide webtoon active">
                         <ul class="toon-list col-small">
 
                         </ul>
                     </div>
                     
+                    <!-- Best Challenge list -->
                     <div class="swiper-slide best">
                         <ul class="toon-list col-small">
 
@@ -100,6 +111,7 @@
 
         <!-- 이달의 신작 Section -->
         <section class="sc-new">
+            <!-- Head area -->
             <div class="group-title">
                 <h2 class="title">이달의 신작</h2>
                 <div class="num-box">
@@ -108,9 +120,10 @@
                         <span class="curr"></span>
                     </em>
                     <span class="blind">전체</span>
-                    
                 </div>
             </div>
+
+            <!-- Webtoon Slide -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -167,9 +180,11 @@
 
         <!-- 연령별/성별 실시간 랭킹 Section -->
         <section class="sc-age">
+            <!-- Head area -->
             <div class="group-title">
                 <h2 class="title">연령별·성별 실시간 랭킹</h2>
             </div>
+            <!-- Button Sort -->
             <div class="group-sort">
                 <button class="btn-sort active">10대여자</button>
                 <button class="btn-sort">10대남자</button>
@@ -178,6 +193,7 @@
                 <button class="btn-sort">30대여자</button>
                 <button class="btn-sort">30대남자</button>
             </div>
+            <!-- Webtoon list area -->
             <div class="swiper">
                 <div class="swiper-wrapper">  <!-- 연령별·성별 div -->
                     <div class="swiper-slide age-10f">
@@ -223,9 +239,11 @@
 
         <!-- Common Section -->
         <section class="sc-recommend">
+            <!-- Head area -->
             <div class="group-title">
                 <h2 class="title">더위를 뿌셔줄 액션판타지</h2>
             </div>
+            <!-- Webtoon list area -->
             <div class="scroll-area recommend1">
                 <ul class="toon-list row-medium">
 
@@ -242,9 +260,11 @@
 
         <!-- Common Section -->
         <section class="sc-recommend">
+            <!-- Head area -->
             <div class="group-title">
                 <h2 class="title">무료로 볼 마지막 기회!</h2>
             </div>
+            <!-- Webtoon list area -->
             <div class="scroll-area recommend2">
                 <ul class="toon-list row-medium">
 
