@@ -58,8 +58,10 @@
     // 개별
     &.row-small{
         display: flex;
-        overflow-x: auto;
-        @extend .hide-scroll;
+        overflow-x: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        &::-webkit-scrollbar{display:none;} /* Chrome , Safari , Opera */
         .toon-item{
             margin-right: 6px;
         }
@@ -75,8 +77,10 @@
     }
     &.row-medium{
         display: flex;
-        overflow-x: auto;
-        @extend .hide-scroll;
+        overflow-x: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        &::-webkit-scrollbar{display:none;} /* Chrome , Safari , Opera */
     }
     &.col-small{
         margin-top: 12px;

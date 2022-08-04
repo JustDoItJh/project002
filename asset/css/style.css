@@ -54,6 +54,7 @@ table {
     @세팅구역
 */
 body {
+  min-width: 500px;
   font-size: 14px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -186,6 +187,7 @@ textarea::-webkit-outer-spin-button {
 }
 
 body {
+  min-width: 500px;
   font-family: "Noto Sans KR", sans-serif;
   color: #000;
   background: #eee;
@@ -226,11 +228,11 @@ body {
   vertical-align: top;
 }
 
-.hide-scroll, .sublnb-area .sublnb-list, .toon-list.row-medium, .toon-list.row-small {
+.hide-scroll, .sublnb-area .sublnb-list {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.hide-scroll .box::-webkit-scrollbar, .sublnb-area .sublnb-list .box::-webkit-scrollbar, .toon-list.row-medium .box::-webkit-scrollbar, .toon-list.row-small .box::-webkit-scrollbar {
+.hide-scroll::-webkit-scrollbar, .sublnb-area .sublnb-list::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
@@ -238,7 +240,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
   z-index: 99;
   font-weight: 300;
   background: #fff;
@@ -655,7 +657,13 @@ body {
 }
 .toon-list.row-small {
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  /* Chrome , Safari , Opera */
+}
+.toon-list.row-small::-webkit-scrollbar {
+  display: none;
 }
 .toon-list.row-small .toon-item {
   margin-right: 6px;
@@ -672,7 +680,13 @@ body {
 }
 .toon-list.row-medium {
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  /* Chrome , Safari , Opera */
+}
+.toon-list.row-medium::-webkit-scrollbar {
+  display: none;
 }
 .toon-list.col-small {
   margin-top: 12px;

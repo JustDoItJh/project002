@@ -1,4 +1,5 @@
 body {
+    min-width: 500px;
     font-family: $font-kr;
     color: #000;
     background: #eee;
@@ -43,7 +44,7 @@ body {
 .hide-scroll {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-    .box::-webkit-scrollbar {
+    &::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
     }
 }
