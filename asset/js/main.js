@@ -301,6 +301,21 @@ $(function(){
       document.querySelector('.recommend1 .toon-list').innerHTML = recommend1html;
       document.querySelector('.recommend2 .toon-list').innerHTML = recommend2html;
       
+
+        // -------------------------실시간 랭킹 top10 Swipepr--------------------------
+
+        const topSlide = new Swiper(".sc-top10 .swiper", {
+            slidesPerView: 1, // 슬라이드에 보여지는 개수
+            spaceBetween: 10, // 슬라이드 사이 간격
+            loop: true,
+        });
+        
+        $('.sc-top10 .btn-sort').click(function(){
+            idx2 = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            topSlide.slideToLoop(idx2);
+        });
+
   
       const ageSlide = new Swiper(".sc-age .swiper", {
           slidesPerView: 1.1, // 슬라이드에 보여지는 개수
@@ -523,19 +538,7 @@ $(function(){
   
   
   
-      // -------------------------실시간 랭킹 top10 Swipepr--------------------------
-  
-      const topSlide = new Swiper(".sc-top10 .swiper", {
-        slidesPerView: 1, // 슬라이드에 보여지는 개수
-        spaceBetween: 10, // 슬라이드 사이 간격
-        loop: true,
-      });
-  
-      $('.sc-top10 .btn-sort').click(function(){
-        idx2 = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        topSlide.slideToLoop(idx2 - 2);
-      });
+
     
   
       var swiper = new Swiper(".sc-common .swiper", {
